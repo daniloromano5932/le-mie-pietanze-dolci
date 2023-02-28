@@ -1,0 +1,26 @@
+
+TO DO LIST
+
+activate search bar
+modify cards section's margins
+
+***********************************************
+collapsed site:
+fix title
+fix total cakes
+fix navbar 
+
+
+
+
+future plans:
+
+translation en de - onclick: bandiere
+
+
+format code
+
+Quality Check
+controllare foto ritagli (parti nere, screenshots...)
+controllare n foto in folder = n foto in components 
+remove total number from each card

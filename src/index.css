@@ -1,0 +1,315 @@
+/* Color Palette
+https://colorhunt.co/palette/f3c5c5c1a3a3886f6f694e4e  */
+
+/*ELEMENTS */
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  background-color: #FDF6F0;
+  color: #694E4E;
+}
+
+h1,
+h2,
+h4,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* HEADINGS */
+
+.big-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-top: 10rem;
+  color: #694E4E;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  }
+
+/* CONTAINERS */
+
+/* 
+#features {
+  position: relative;
+} */
+
+/*NAVBAR*/
+
+.colored-section {
+  padding: 3% 10% 1%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-left: 0;
+}
+
+.navbar {
+  padding-top: 0.5rem;
+  background-color: #FDF6F0 !important;
+  width: 100% !important;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.navbar.sticky {
+ z-index: 200;
+ box-shadow: 0 0 4px 4px #694E4E;
+}
+
+.total-cakes {
+  margin-bottom: 7%;
+  margin-top: 5%;
+  margin-left: 80%
+}
+
+.navbar :link {
+  text-decoration: none;
+}
+
+.navbar a {
+  margin: 20px;
+}
+
+.title {
+  padding: 0 0 2.2rem;
+  margin-left: 0;
+}
+
+.navbar-brand {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #694E4E;
+  margin-left: 50%;
+}
+
+.navbar-brand:hover {
+  text-shadow: 2px 2px 9px #F5C6AA;
+  color: #9E7676;
+}
+
+.navbar-nav {
+  margin-right: 30%;
+  margin-left: 60%;
+  width: 600px;
+}
+
+.navbar a {
+  color: #694E4E;
+}
+
+.navbar .home-link {
+  margin-left: 8%;
+  transition: transform 0.2s;
+}
+
+.navbar .home-link:hover {
+  transform: scale(1.5);
+}
+
+.navbar-toggler {
+  margin-right: 10%;
+}
+
+.nav-link {
+  /* margin: auto; */
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform .2s;
+  padding-left: 100px;
+}
+
+.nav-link:hover {
+  transform: scale(1.5);
+}
+
+
+
+
+/*IMAGES*/
+
+.big-pic {
+  object-fit: contain;
+  width: 500px;
+  height: 500px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pic_size {
+  object-fit: contain;
+}
+
+/*CAKEINFO*/
+
+.pop-text {
+  font-size: large;
+}
+
+.modal-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+.cake-info {
+  height: 100%;
+}
+
+
+#features {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  transition: transform .2s;
+}
+
+#features .features-item:hover {
+  color: #9E7676;
+  transform: scale(1.3);
+}
+
+
+/* Features */
+/* .features-icon {
+  color: #ef8172;
+}
+
+.features-icon:hover {
+  color: #ff4c68;
+}
+
+.features-txt {
+  margin-top: 5px;
+  color: #8f8f8f;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+.text-center {
+  padding: 5%;
+} */
+
+/* Testimonials */
+
+/* .testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+} */
+
+/* Pricing Section */
+
+/* #pricing {
+  padding: 100px;
+}
+
+ */
+
+/* .first_section_età {
+  background-color: #000B49;
+} */
+
+/* .second_section_innamorati {
+  background-color: #9B0000;
+}
+
+.third_section_anno {
+  background-color: #FF7272;
+}
+
+.fourth_section_varie {
+  background-color: #000B49;
+}
+
+.first_section_eventi {
+  background-color: #FFB5B5;
+}
+ */
+
+/*CARDS*/
+
+.card {
+  border: 2px solid #694E4E;
+  box-shadow: 0 0 4px 4px #694E4E;
+  perspective: 1000px;
+  background-color: #FDF6F0;
+  color: #694E4E;
+}
+
+
+
+.cards-section {
+  margin: 50px;
+}
+
+.btn:hover {
+  background-color:#594545;
+  box-shadow: 0 0 5px 5px #F5C6AA !important;
+  color: #FDF6F0;
+  position: relative;
+  bottom: 2px;
+  left: 2px;
+}
+
+.btn {
+  background-color:antiquewhite;
+  margin-top: 10px;
+  color: #594545;
+}
+
+.pricing-column {
+  border-radius: 30px;
+  width: 350px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 10px #594545;
+  background-color: #FAE8D5;
+  position: relative;
+  bottom: 2px;
+  left: 2px;
+  /* cursor: pointer; */
+}
+
+/*FOOTER*/
+
+#footer {
+  margin-top: 100px;
+}
+
+.socialMedia {
+  padding-top: 30px;
+  margin: 50px;
+}
+
+.copyright {
+  margin-top: 40px;
+  font-size: large;
+}
+
+.error-message {
+  margin-top: 10%;
+}
