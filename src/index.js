@@ -6,6 +6,7 @@ import App from './App';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Category from "./pages/Category";
 import Error from "./pages/Error";
+import Search from './pages/Search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path=':category' element={<Category />} />
       <Route path='/error' element={<Error />} />
+      <Route path="/search" element={<Search />} />
     </Routes>
   </BrowserRouter>
 );

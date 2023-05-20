@@ -1,6 +1,5 @@
 import React from "react";
 import CakeInfo from "./CakeInfo";
-import Rating from "react-rating";
 
 function CardVedi(props) {
   return <div className={"pricing-column col-lg-4 col-md-6"}>

@@ -8,6 +8,7 @@ import data from "../data";
 import Error from "./Error";
 
 function Category() {
+
   const { category } = useParams();
   const products = data[category];
 
@@ -27,6 +28,7 @@ function Category() {
       <div className="row cards-section">
         {products.map((item) => (
           <CardVedi
+            key={item.id}
             data={item}
           />
         ))}

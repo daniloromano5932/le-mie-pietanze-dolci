@@ -24,9 +24,10 @@ function App() {
         
       </section>
       <div className='row cards-section'>
-        {HomePageCategories.map((homepage) => (
+        {HomePageCategories.map((category) => (
           <CardApri
-            data={homepage}
+            key={category.id}
+            data={category}
           />
         ))}
       </div>

@@ -47,10 +47,10 @@ const HomePageCategories = [
   },
   {
     id: 5,
-    name: "Cheesecakes",
+    name: "CheeseCakes",
     image: CheesecakesDetails[Math.floor(Math.random()*CheesecakesDetails.length)].image,
-    alt: "Immagine Cheesecakes",
-    href: "Cheesecakes",
+    alt: "Immagine CheeseCakes",
+    href: "CheeseCakes",
     button: "Apri",
     total: CheesecakesDetails.length
   },

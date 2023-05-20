@@ -11,15 +11,6 @@ const Torte = [
   },
   {
     id: 2,
-    name: "Torte2",
-    image: "images/Torte/20210625_181436.jpg",
-    alt: "Immagine Torte2",
-    href: "",
-    button: "Vedi",
-    extra: ["images/Torte/20210625_181436.jpg","images/Torte/20210625_181917.jpg"]
-  },
-  {
-    id: 3,
     name: "Torte3",
     image: "images/Torte/20210729_182641.png",
     alt: "Immagine Torte3",
@@ -28,7 +19,7 @@ const Torte = [
     extra: ["images/Torte/20210729_182641.png","images/Torte/20210729_161459 (1).jpg","images/Torte/20210729_182656.jpg"]
   },
   {
-    id: 4,
+    id: 3,
     name: "Torte4",
     image: "images/Torte/20210821_134457.jpg",
     alt: "Immagine Torte4",
@@ -37,7 +28,7 @@ const Torte = [
     extra: ["images/Torte/20210821_134457.jpg", "images/Torte/20210821_135106 (1).jpg", "images/Torte/20210821_151229.jpg"]
   },
   {
-    id: 51,
+    id: 4,
     name: "Torte51",
     image: "images/Torte/IMG_20221123_193434.jpg",
     alt: "Immagine Torte51",
@@ -271,7 +262,7 @@ const Torte = [
     extra: ["images/Torte/20220507_171532 (1).jpg","images/Torte/20220507_171218.jpg"],
   },
   {
-    id: 33,
+    id: 30,
     name: "Torte33",
     image: "images/Torte/20220527_221849.jpg",
     alt: "Immagine Torte33",
@@ -280,7 +271,7 @@ const Torte = [
     extra: ["images/Torte/20220527_221849.jpg"],
   },
   {
-    id: 30,
+    id: 31,
     name: "Torte30",
     image: "images/Torte/20220521_172258.jpg",
     alt: "Immagine Torte30",
@@ -289,7 +280,7 @@ const Torte = [
     extra: ["images/Torte/20220521_172258.jpg","images/Torte/20220521_173547.jpg"],
   },
   {
-    id: 31,
+    id: 32,
     name: "Torte31",
     image: "images/Torte/20220524_231427.jpg",
     alt: "Immagine Torte31",
@@ -298,7 +289,7 @@ const Torte = [
     extra: ["images/Torte/20220524_231427.jpg"],
   },
   {
-    id: 32,
+    id: 33,
     name: "Torte32",
     image: "images/Torte/20220525_114344.jpg",
     alt: "Immagine Torte32",
@@ -324,17 +315,9 @@ const Torte = [
     button: "Vedi",
     extra: ["images/Torte/20220602_130748.jpg"],
   },
+
   {
     id: 36,
-    name: "Torte36",
-    image: "images/Torte/20220608_160255.jpg",
-    alt: "Immagine Torte36",
-    href: "",
-    button: "Vedi",
-    extra: ["images/Torte/20220608_160255.jpg"],
-  },
-  {
-    id: 37,
     name: "Torte37",
     image: "images/Torte/20220612_220631.jpg",
     alt: "Immagine Torte37",
@@ -343,7 +326,7 @@ const Torte = [
     extra: ["images/Torte/20220612_220631.jpg","images/Torte/20220612_220235.jpg","images/Torte/20220612_222506.jpg"],
   },
   {
-    id: 38,
+    id: 37,
     name: "Torte38",
     image: "images/Torte/20220621_224156.jpg",
     alt: "Immagine Torte38",
@@ -352,7 +335,7 @@ const Torte = [
     extra: ["images/Torte/20220621_224156.jpg","images/Torte/20220622_145718.jpg"],
   },
   {
-    id: 39,
+    id: 38,
     name: "Torte39",
     image: "images/Torte/20220626_145006.jpg",
     alt: "Immagine Torte39",
@@ -361,7 +344,7 @@ const Torte = [
     extra: ["images/Torte/20220626_145006.jpg","images/Torte/20220626_150217.jpg"],
   },
   {
-    id: 40,
+    id: 39,
     name: "Torte40",
     image: "images/Torte/IMG_20220729_190136.jpg",
     alt: "Immagine Torte40",
@@ -379,7 +362,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20220814_111646.jpg","images/Torte/IMG_20220814_112028.jpg","images/Torte/IMG_20220814_112949.jpg","images/Torte/IMG_20220816_074408.jpg"],
   },
   {
-    id: 47,
+    id: 41,
     name: "Torte47b",
     image: "images/Torte/IMG_20221015_075639.jpg",
     alt: "Immagine Torte47",
@@ -388,7 +371,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221015_075639.jpg", "images/Torte/IMG_20221014_214042.jpg", "images/Torte/IMG_20221015_075402.jpg"],
   },
   {
-    id: 41,
+    id: 42,
     name: "Torte41",
     image: "images/Torte/IMG_20220829_134333.jpg",
     alt: "Immagine Torte41",
@@ -397,7 +380,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20220829_134333.jpg"],
   },
   {
-    id: 42,
+    id: 43,
     name: "Torte42",
     image: "images/Torte/WhatsApp Image 2022-12-26 at 10.17.44 PM.jpeg",
     alt: "Immagine Torte42",
@@ -406,7 +389,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-26 at 10.17.44 PM.jpeg", "images/Torte/IMG_20220830_163533.jpg", "images/Torte/IMG_20220830_163726.jpg"],
   },
   {
-    id: 43,
+    id: 44,
     name: "Torte43",
     image: "images/Torte/IMG_20220929_221728.jpg",
     alt: "Immagine Torte43",
@@ -415,7 +398,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20220929_221728.jpg", "images/Torte/IMG_20220929_221902.jpg", "images/Torte/IMG_20221001_063642.jpg"],
   },
   {
-    id: 44,
+    id: 45,
     name: "Torte44",
     image: "images/Torte/IMG_20221003_202618_1.jpg",
     alt: "Immagine Torte44",
@@ -424,7 +407,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221003_202618_1.jpg", "images/Torte/IMG_20221004_144528.jpg", "images/Torte/IMG_20221004_154236.jpg"],
   },
   {
-    id: 45,
+    id: 46,
     name: "Torte45",
     image: "images/Torte/IMG_20221005_102020.jpg",
     alt: "Immagine Torte45",
@@ -433,7 +416,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221005_102020.jpg"],
   },
   {
-    id: 46,
+    id: 47,
     name: "Torte46",
     image: "images/Torte/IMG_20221014_145425.jpg",
     alt: "Immagine Torte46",
@@ -442,7 +425,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221014_145425.jpg", "images/Torte/IMG_20221014_150153.jpg"],
   },
   {
-    id: 47,
+    id: 48,
     name: "Torte47",
     image: "images/Torte/IMG_20221024_184810.jpg",
     alt: "Immagine Torte47",
@@ -451,7 +434,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221024_184810.jpg", "images/Torte/IMG_20221024_202937.jpg"],
   },
   {
-    id: 48,
+    id: 49,
     name: "Torte48",
     image: "images/Torte/WhatsApp Image 2022-12-26 at 11.07.08 PM.jpeg",
     alt: "Immagine Torte48",
@@ -460,7 +443,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-26 at 11.07.08 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-26 at 11.07.40 PM.jpeg"],
   },
   {
-    id: 49,
+    id: 50,
     name: "Torte49",
     image: "images/Torte/IMG_20221116_155236.jpg",
     alt: "Immagine Torte49",
@@ -469,7 +452,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221116_155236.jpg", "images/Torte/IMG_20221116_160218.jpg"],
   },
   {
-    id: 50,
+    id: 51,
     name: "Torte50",
     image: "images/Torte/IMG_20221123_190114.jpg",
     alt: "Immagine Torte50",
@@ -478,7 +461,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221123_190114.jpg"],
   },
   {
-    id: 51,
+    id: 52,
     name: "Torte51",
     image: "images/Torte/IMG_20221130_143246.jpg",
     alt: "Immagine Torte51",
@@ -487,7 +470,7 @@ const Torte = [
     extra: ["images/Torte/IMG_20221130_143246.jpg", "images/Torte/IMG_20221130_143251.jpg", "images/Torte/IMG_20221130_152028.jpg"],
   },
   {
-    id: 52,
+    id: 53,
     name: "Torte52",
     image: "images/Torte/WhatsApp Image 2022-12-26 at 11.37.53 PM.jpeg",
     alt: "Immagine Torte52",
@@ -496,7 +479,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-26 at 11.37.53 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-26 at 11.38.16 PM.jpeg"],
   },
   {
-    id: 53,
+    id: 54,
     name: "Torte53",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.42.50 PM.jpeg",
     alt: "Immagine Torte53",
@@ -505,7 +488,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.42.50 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 9.42.50 PM (1).jpeg"],
   },
   {
-    id: 54,
+    id: 55,
     name: "Torte54",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.43.40 PM.jpeg",
     alt: "Immagine Torte54",
@@ -514,7 +497,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.43.40 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 9.43.40 PM (1).jpeg"],
   },
   {
-    id: 55,
+    id: 56,
     name: "Torte55",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.44.53 PM.jpeg",
     alt: "Immagine Torte55",
@@ -523,7 +506,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.44.53 PM.jpeg","images/Torte/WhatsApp Image 2022-12-27 at 9.44.54 PM.jpeg"],
   },
   {
-    id: 56,
+    id: 57,
     name: "Torte56",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.45.41 PM.jpeg",
     alt: "Immagine Torte56",
@@ -532,7 +515,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.45.41 PM.jpeg",],
   },
   {
-    id: 57,
+    id: 58,
     name: "Torte57",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.50.20 PM.jpeg",
     alt: "Immagine Torte57",
@@ -541,7 +524,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.50.20 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 9.50.20 PM (1).jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 9.50.20 PM (2).jpeg"],
   },
   {
-    id: 58,
+    id: 59,
     name: "Torte58",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.53.05 PM.jpeg",
     alt: "Immagine Torte58",
@@ -550,7 +533,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.53.05 PM.jpeg"],
   },
   {
-    id: 59,
+    id: 60,
     name: "Torte59",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.57.05 PM.jpeg",
     alt: "Immagine Torte59",
@@ -559,7 +542,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.57.05 PM.jpeg"],
   },
   {
-    id: 60,
+    id: 61,
     name: "Torte60",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 9.57.56 PM.jpeg",
     alt: "Immagine Torte60",
@@ -568,7 +551,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 9.57.56 PM.jpeg"],
   },
   {
-    id: 61,
+    id: 62,
     name: "Torte61",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 10.01.47 PM.jpeg",
     alt: "Immagine Torte61",
@@ -577,7 +560,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 10.01.47 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 10.01.47 PM (1).jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 10.01.46 PM.jpeg"],
   },
   {
-    id: 62,
+    id: 63,
     name: "Torte62",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 10.07.59 PM.jpeg",
     alt: "Immagine Torte62",
@@ -586,7 +569,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 10.07.59 PM.jpeg"],
   },
   {
-    id: 63,
+    id: 64,
     name: "Torte63",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 10.09.41 PM.jpeg",
     alt: "Immagine Torte63",
@@ -595,7 +578,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 10.09.41 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 10.09.41 PM (1).jpeg"],
   },
   {
-    id: 64,
+    id: 65,
     name: "Torte64",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 10.28.59 PM.jpeg",
     alt: "Immagine Torte64",
@@ -604,7 +587,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 10.28.59 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 10.28.58 PM.jpeg", "images/Torte/WhatsApp Image 2022-12-27 at 10.28.59 PM (1).jpeg"],
   },
   {
-    id: 65,
+    id: 66,
     name: "Torte65",
     image: "images/Torte/WhatsApp Image 2022-12-27 at 10.53.38 PM (1).jpeg",
     alt: "Immagine Torte65",
@@ -613,7 +596,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2022-12-27 at 10.53.38 PM (1).jpeg"],
   },
   {
-    id: 66,
+    id: 67,
     name: "Torte66",
     image: "images/Torte/WhatsApp Image 2023-01-02 at 9.48.32 PM.jpeg",
     alt: "Immagine Torte66",
@@ -622,7 +605,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2023-01-02 at 9.48.32 PM.jpeg"],
   },
   {
-    id: 67,
+    id: 68,
     name: "Torte67",
     image: "images/Torte/WhatsApp Image 2023-01-23 at 9.24.50 AM.jpeg",
     alt: "Immagine Torte67",
@@ -631,7 +614,7 @@ const Torte = [
     extra: ["images/Torte/WhatsApp Image 2023-01-23 at 9.24.50 AM.jpeg", "images/Torte/WhatsApp Image 2023-01-23 at 9.29.48 AM.jpeg"],
   },
   {
-    id: 68,
+    id: 69,
     name: "Torta Paradiso",
     image: "images/Torte/WhatsApp Image 2023-01-23 at 9.35.38 AM.jpeg",
     alt: "Immagine Torta Paradiso",

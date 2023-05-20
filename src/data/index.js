@@ -1,5 +1,5 @@
 import Biscotti from "./BiscottiDetails";
-import CheeseCake from "./CheesecakesDetails";
+import CheeseCakes from "./CheesecakesDetails";
 import Ciambelloni from "./CiambelloniDetails";
 import Crostate from "./CrostateDetails";
 import Frittelle from "./FrittelleDetails";
@@ -7,9 +7,9 @@ import MuffinsAndCupcakes from "./MuffinsAndCupcakesDetails";
 import Rotoli from "./RotoliDetails";
 import Torte from "./TorteDetails"
 
-export default { 
+const data =  { 
   Biscotti,
-  CheeseCake,
+  CheeseCakes,
   Ciambelloni,
   Crostate,
   Frittelle,
@@ -17,3 +17,5 @@ export default {
   Rotoli,
   Torte
 };
+
+export default data;

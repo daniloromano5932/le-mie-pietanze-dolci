@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function CardApri(props) {
 
+
   return <div className={"pricing-column col-lg-4 col-md-6"}>
     <div className={"card"}>
       <div className={"card-body"}>
