@@ -129,8 +129,8 @@ h6 {
 
 
 .home-page-img {
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 500px;
   object-fit:cover;
 }
 
@@ -311,32 +311,36 @@ img {
 /*CARDS*/
 
 
-.App {
-  background-color: #815B5B;
-}
 
 .feature {
-  margin-top: 150px;
+  margin-top: 30px;
   text-align: center;
-  color: #FFF8EA ;
+  color: #594545 ;
 }
 
 
+
+.text-center {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 
 .row1 {
   margin-top: 30px;
-  /* background-color: #9E7676; */
 }
 
 .row2 {
   margin-top: 30px;
-  /* background-color: #9E7676; */
 }
 
 .features {
   margin-top: 100px;
+ margin-bottom: 30px;
 }
 
+.row1, .row2 {
+  background-image: linear-gradient(#FFF8EA, #594545);
+}
 
 .card {
   border: 2px solid #694E4E;
@@ -348,9 +352,9 @@ img {
 }
 
 
-
-
-
+.test {
+  margin-top: 50px;
+}
 
 .btn:hover {
   background-color:#594545;
@@ -377,14 +381,8 @@ img {
   position: relative;
   bottom: 2px;
   left: 2px;
-  /* cursor: pointer; */
 }
 
-/* .card-img {
-  margin-top: 10px;
-  width: 180px;
-  object-fit:cover;
-} */
 
 
 /*FOOTER*/
