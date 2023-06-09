@@ -8,7 +8,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 4,
-    extra: ["images/Crostate/20210606_130707.jpg"]
+    extra: ["images/Crostate/20210606_130707.jpg"],
+    ingredients: ["ciliegie", "pistacchio", "marmellata", "frutta"],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 2,
@@ -18,7 +23,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20211215_195821.jpg","images/Crostate/20211216_055614.jpg"]
+    extra: ["images/Crostate/20211215_195821.jpg", "images/Crostate/20211216_055614.jpg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 3,
@@ -28,7 +38,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220114_222913.jpg"]
+    extra: ["images/Crostate/20220114_222913.jpg"],
+    ingredients: ["marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["fiori"],
+    audience: [""]
   },
   {
     id: 4,
@@ -38,7 +53,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220122_203938.jpg"]
+    extra: ["images/Crostate/20220122_203938.jpg"],
+    ingredients: ["frutta", "kiwi", "uva", "mandarini", "ananas"],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 5,
@@ -48,7 +68,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220204_142353.jpg"]
+    extra: ["images/Crostate/20220204_142353.jpg"],
+    ingredients: ["panna", "cioccolato"],
+    occasions: [""],
+    colors: ["verde"],
+    keywords: ["fiori", "foglie"],
+    audience: [""]
   },
   {
     id: 6,
@@ -58,7 +83,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220205_105049.jpg"]
+    extra: ["images/Crostate/20220205_105049.jpg"],
+    ingredients: ["frutta", "fragole", "kiwi", "banane"],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 7,
@@ -68,7 +98,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220306_094015.jpg","images/Crostate/20220306_094402.jpg","images/Crostate/20220306_083134.jpg"]
+    extra: ["images/Crostate/20220306_094015.jpg", "images/Crostate/20220306_094402.jpg", "images/Crostate/20220306_083134.jpg"],
+    ingredients: ["fragole", "panna", "frutta"],
+    occasions: [""],
+    colors: ["rosso"],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 8,
@@ -78,7 +113,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220329_072011.jpg"]
+    extra: ["images/Crostate/20220329_072011.jpg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 9,
@@ -88,7 +128,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220424_073156.jpg", "images/Crostate/20220424_074048.jpg"]
+    extra: ["images/Crostate/20220424_073156.jpg", "images/Crostate/20220424_074048.jpg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
 
   },
   {
@@ -99,7 +144,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220509_222551.jpg"]
+    extra: ["images/Crostate/20220509_222551.jpg"],
+    ingredients: ["fragole", "frutta"],
+    occasions: [""],
+    colors: ["rosso"],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 11,
@@ -109,7 +159,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220515_191712.jpg"]
+    extra: ["images/Crostate/20220515_191712.jpg"],
+    ingredients: ["panna"],
+    occasions: [""],
+    colors: ["verde", "rosa"],
+    keywords: ["mare", "conchiglie", "stelle"],
+    audience: [""]
   },
   {
     id: 12,
@@ -119,7 +174,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220527_200643.jpg"]
+    extra: ["images/Crostate/20220527_200643.jpg"],
+    ingredients: ["frutta", "kiwi", "banane", "fragole", "uva", "ananas"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["fiori"],
+    audience: [""]
 
   },
   {
@@ -130,7 +190,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220606_122923.jpg"]
+    extra: ["images/Crostate/20220606_122923.jpg"],
+    ingredients: ["cioccolato", "amarena"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["mare", "fiori", "stelle"],
+    audience: [""]
   },
   {
     id: 14,
@@ -140,7 +205,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20220610_162950.jpg"]
+    extra: ["images/Crostate/20220610_162950.jpg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["ventaglio", "assortito"],
+    audience: [""]
   },
   {
     id: 15,
@@ -150,7 +220,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/IMG_20220807_204125.jpg","images/Crostate/IMG_20220820_143532.jpg"]
+    extra: ["images/Crostate/IMG_20220807_204125.jpg", "images/Crostate/IMG_20220820_143532.jpg"],
+    ingredients: ["cioccolato"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["fiori"],
+    audience: [""]
   },
   {
     id: 16,
@@ -160,7 +235,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/IMG_20220922_063837.jpg", "images/Crostate/IMG_20220922_065038.jpg"]
+    extra: ["images/Crostate/IMG_20220922_063837.jpg", "images/Crostate/IMG_20220922_065038.jpg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 17,
@@ -170,7 +250,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/IMG_20220924_090743.jpg", "images/Crostate/IMG_20220924_091405.jpg"]
+    extra: ["images/Crostate/IMG_20220924_090743.jpg", "images/Crostate/IMG_20220924_091405.jpg"],
+    ingredients: ["frutta", "pesche", "kiwi", "banane"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["fiori"],
+    audience: [""]
   },
   {
     id: 18,
@@ -180,7 +265,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/IMG_20221018_082048.jpg", "images/Crostate/IMG_20221018_082529.jpg" ]
+    extra: ["images/Crostate/IMG_20221018_082048.jpg", "images/Crostate/IMG_20221018_082529.jpg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["mare", "conchiglie"],
+    audience: [""]
   },
   {
     id: 19,
@@ -190,7 +280,12 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/WhatsApp Image 2022-12-15 at 5.32.43 PM.jpeg", "images/Crostate/WhatsApp Image 2022-12-15 at 5.33.01 PM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-15 at 5.32.43 PM.jpeg", "images/Crostate/WhatsApp Image 2022-12-15 at 5.33.01 PM.jpeg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 20,
@@ -200,147 +295,278 @@ const Crostate = [
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: ["images/Crostate/20210629_162551.jpg", "images/Crostate/20210629_183818.jpg", "images/Crostate/20210629_184109.jpg", "images/Crostate/20210629_184606.jpg"]
+    extra: ["images/Crostate/20210629_162551.jpg", "images/Crostate/20210629_183818.jpg", "images/Crostate/20210629_184109.jpg", "images/Crostate/20210629_184606.jpg"],
+    ingredients: ["frutta", "ciliegie", "panna"],
+    occasions: [""],
+    colors: ["rosa"],
+    keywords: ["animali", "farfalla"],
+    audience: [""]
   },
   {
     id: 21,
-    name: "Crostate21",
+    name: "Crostata21",
     image: "images/Crostate/20210802_080032.jpeg",
-    alt: "Immagine Crostate21",
+    alt: "Immagine Crostata21",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/20210802_080032.jpeg"]
+    extra: ["images/Crostate/20210802_080032.jpeg"],
+    ingredients: ["cioccolato"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["cesto", "funghi"],
+    audience: [""]
   },
   {
     id: 22,
-    name: "Crostate22",
+    name: "Crostata22",
     image: "images/Crostate/20211205_212905.jpg",
-    alt: "Immagine Crostate22",
+    alt: "Immagine Crostata22",
     href: "",
     button: "Vedi",
     category: "Natale",
-    extra: [ "images/Crostate/20211205_212905.jpg","images/Crostate/WhatsApp Image 2022-12-27 at 10.14.13 PM.jpeg"]
+    extra: ["images/Crostate/20211205_212905.jpg", "images/Crostate/WhatsApp Image 2022-12-27 at 10.14.13 PM.jpeg"],
+    ingredients: ["cioccolato"],
+    occasions: ["natale"],
+    colors: [""],
+    keywords: ["stelle", "alberi"],
+    audience: [""]
   },
   {
     id: 23,
-    name: "Crostate23",
+    name: "Crostata23",
     image: "images/Crostate/20210530_183051.jpg",
-    alt: "Immagine Crostate23",
+    alt: "Immagine Crostata23",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/20210530_183051.jpg"]
+    extra: ["images/Crostate/20210530_183051.jpg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 24,
-    name: "Crostate24",
+    name: "Crostata24",
     image: "images/Crostate/20210822_171812.jpg",
-    alt: "Immagine Crostate24",
+    alt: "Immagine Crostata24",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/20210822_171812.jpg"]
+    extra: ["images/Crostate/20210822_171812.jpg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 25,
-    name: "Crostate25",
+    name: "Crostata25",
     image: "images/Crostate/WhatsApp Image 2022-12-18 at 10.45.55 AM.jpeg",
-    alt: "Immagine Crostate25",
+    alt: "Immagine Crostata25",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-18 at 10.45.55 AM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-18 at 10.45.55 AM.jpeg"],
+    ingredients: ["frutta", "fragole", "kiwi", "cioccolato", "panna"],
+    occasions: [""],
+    colors: ["rosso", "verde"],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 26,
-    name: "Crostate26",
+    name: "Crostata26",
     image: "images/Crostate/WhatsApp Image 2022-12-18 at 10.46.41 AM (1).jpeg",
-    alt: "Immagine Crostate26",
+    alt: "Immagine Crostata26",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-18 at 10.46.41 AM (1).jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-18 at 10.46.41 AM (1).jpeg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["uva", "stelle", "autunno"],
+    audience: [""]
   },
   {
     id: 27,
-    name: "Crostate27",
+    name: "Crostata27",
     image: "images/Crostate/WhatsApp Image 2022-12-18 at 2.35.55 PM.jpeg",
-    alt: "Immagine Crostate27",
+    alt: "Immagine Crostata27",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-18 at 2.35.55 PM.jpeg","images/Crostate/WhatsApp Image 2022-12-18 at 2.37.04 PM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-18 at 2.35.55 PM.jpeg", "images/Crostate/WhatsApp Image 2022-12-18 at 2.37.04 PM.jpeg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 28,
-    name: "Crostate28",
+    name: "Crostata28",
     image: "images/Crostate/WhatsApp Image 2022-12-18 at 11.09.51 PM.jpeg",
-    alt: "Immagine Crostate28",
+    alt: "Immagine Crostata28",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-18 at 11.09.51 PM.jpeg","images/Crostate/WhatsApp Image 2022-12-18 at 10.46.40 AM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-18 at 11.09.51 PM.jpeg", "images/Crostate/WhatsApp Image 2022-12-18 at 10.46.40 AM.jpeg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["rose", "fiori"],
+    audience: [""]
   },
   {
     id: 29,
-    name: "Crostate29",
+    name: "Crostata29",
     image: "images/Crostate/WhatsApp Image 2022-12-18 at 10.46.41 AM (4).jpeg",
-    alt: "Immagine Crostate29",
+    alt: "Immagine Crostata29",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-18 at 10.46.41 AM (4).jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-18 at 10.46.41 AM (4).jpeg"],
+    ingredients: ["cioccolato", "pistacchio"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["cuore"],
+    audience: [""]
   },
   {
     id: 30,
-    name: "Crostate30",
+    name: "Crostata30",
     image: "images/Crostate/WhatsApp Image 2022-12-27 at 10.08.48 PM (1).jpeg",
-    alt: "Immagine Crostate30",
+    alt: "Immagine Crostata30",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-27 at 10.08.48 PM (1).jpeg", "images/Crostate/WhatsApp Image 2022-12-27 at 10.08.48 PM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-27 at 10.08.48 PM (1).jpeg", "images/Crostate/WhatsApp Image 2022-12-27 at 10.08.48 PM.jpeg"],
+    ingredients: ["frutta", "fragole", "more"],
+    occasions: [""],
+    colors: ["rosso"],
+    keywords: ["cesto"],
+    audience: [""]
   },
   {
     id: 31,
-    name: "Crostate31",
+    name: "Crostata31",
     image: "images/Crostate/WhatsApp Image 2022-12-27 at 10.18.11 PM.jpeg",
-    alt: "Immagine Crostate31",
+    alt: "Immagine Crostata31",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-27 at 10.18.11 PM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-27 at 10.18.11 PM.jpeg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: ["fiori", "foglie", "ripiena"],
+    audience: [""]
   },
   {
     id: 32,
-    name: "Crostate32",
+    name: "Crostata32",
     image: "images/Crostate/WhatsApp Image 2022-12-27 at 10.20.15 PM.jpeg",
-    alt: "Immagine Crostate32",
+    alt: "Immagine Crostata32",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-27 at 10.20.15 PM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-27 at 10.20.15 PM.jpeg"],
+    ingredients: [""],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
   },
   {
     id: 33,
-    name: "Crostate33",
+    name: "Crostata33",
     image: "images/Crostate/WhatsApp Image 2022-12-27 at 10.25.33 PM.jpeg",
-    alt: "Immagine Crostate33",
+    alt: "Immagine Crostata33",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-27 at 10.25.33 PM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-27 at 10.25.33 PM.jpeg"],
+    ingredients: ["cioccolato"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["stelle"],
+    audience: [""]
   },
   {
     id: 34,
-    name: "Crostate34",
+    name: "Crostata34",
     image: "images/Crostate/WhatsApp Image 2022-12-27 at 10.25.47 PM.jpeg",
-    alt: "Immagine Crostate34",
+    alt: "Immagine Crostata34",
     href: "",
     button: "Vedi",
     rating: 0,
-    extra: [ "images/Crostate/WhatsApp Image 2022-12-27 at 10.25.47 PM.jpeg"]
+    extra: ["images/Crostate/WhatsApp Image 2022-12-27 at 10.25.47 PM.jpeg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: [""],
+    audience: [""]
+  },
+  {
+    id: 35,
+    name: "Crostata35",
+    image: "images/Crostate/WhatsApp Image 2023-05-21 at 7.09.52 PM.jpeg",
+    alt: "Immagine Crostata35",
+    hraf: "",
+    button: "Vedi",
+    extra: ["images/Crostate/WhatsApp Image 2023-05-21 at 7.09.52 PM.jpeg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [""],
+    keywords: ["gatti"],
+    audience: [""]
+  },
+  {
+    id: 36,
+    name: "Crostata36",
+    image: "images/Crostate/WhatsApp Image 2023-05-21 at 7.19.59 PM.jpeg",
+    alt: "Immagine Crostata36",
+    hraf: "",
+    button: "Vedi",
+    extra: ["images/Crostate/WhatsApp Image 2023-05-21 at 7.19.59 PM.jpeg"],
+    ingredients: ["frutta", "marmellata"],
+    occasions: [""],
+    colors: [],
+    keywords: ["fiori"],
+    audience: [""]
+  },
+  {
+    id: 37,
+    name: "Crostata37",
+    image: "images/Crostate/WhatsApp Image 2023-05-21 at 7.22.01 PM.jpeg",
+    alt: "Immagine Crostata37",
+    hraf: "",
+    button: "Vedi",
+    extra: ["images/Crostate/WhatsApp Image 2023-05-21 at 7.22.01 PM.jpeg", "images/Crostate/WhatsApp Image 2023-05-21 at 7.22.00 PM.jpeg"],
+    ingredients: ["frutta", "marmellata", "ricotta", "frutti di bosco"],
+    occasions: [""],
+    colors: [],
+    keywords: [],
+    audience: [""]
+  },
+  {
+    id: 38,
+    name: "Crostata38",
+    image: "images/Crostate/WhatsApp Image 2023-05-21 at 7.17.01 PM.jpeg",
+    alt: "Immagine Crostata38",
+    hraf: "",
+    button: "Vedi",
+    extra: ["images/Crostate/WhatsApp Image 2023-05-21 at 7.17.01 PM.jpeg"],
+    ingredients: ["cioccolato"],
+    occasions: ["san valentino"],
+    colors: ["marrone"],
+    keywords: ["cuori"],
+    audience: [""]
   }
 ]
 

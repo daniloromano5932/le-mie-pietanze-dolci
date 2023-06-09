@@ -1,31 +1,48 @@
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import data from "../data"
+import { data } from "../data"
+import { useState } from 'react';
+import Card from '../components/Card';
 
 
 function Search() {
-console.log(data)
 
+  const items = Object.values(data).flat();
+  const [searchResults, setSearchResults] = useState([]);
+
+  function handleChange(e) {
+    const text = e.target.value
+    setSearchResults(items.filter((item) => item.colors.map((singleColor) => singleColor.toLowerCase()).includes(text.toLowerCase())
+      || item.occasions.map((singleOccasion) => singleOccasion.toLowerCase()).includes(text.toLowerCase())
+      || item.name.toLowerCase().includes(text.toLowerCase())
+      || item.ingredients.map((singleIngredient) => singleIngredient.toLowerCase()).includes(text.toLowerCase())
+      || item.keywords.map((singleKeyword) => singleKeyword.toLowerCase()).includes(text.toLowerCase())
+      || item.audience.map((singleAudience) => singleAudience.toLowerCase()).includes(text.toLowerCase())))
+  }
   return (
-    <div>
-      <Navbar/>
- 
-    <div className='search'>
-    <h4>Cerca il tuo dolce</h4>
-    <Form className="d-flex">
-    <Form.Control
-      type="search"
-      placeholder="Cerca..."
-      className="me-4"
-      aria-label="Search"
-    />
-    <Button variant="outline-success">Cerca</Button>
-  </Form>
-  </div>
-  <Footer/>
-  </div>
+    <div className='d-flex align-items-center justify-content-center'>
+      <div className='search'>
+        <h1>Cerca il tuo dolce</h1>
+        <Form className="">
+          <Form.Control
+            type="search"
+            placeholder="Cerca..."
+            className="me-4"
+            aria-label="Search"
+            onChange={handleChange}
+          />
+        </Form>
+        <div className="row cards-section d-flex align-items-center justify-content-center" id='padding-footer'>
+        {searchResults.map((result) => {
+          return <Card
+            // key={result.id + result.name}
+            key={Math.random()}
+            data={result}
+          />
+        })}
+      </div>
+      </div>
+   
+    </div>
   );
 }
 

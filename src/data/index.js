@@ -7,7 +7,7 @@ import MuffinsAndCupcakes from "./MuffinsAndCupcakesDetails";
 import Rotoli from "./RotoliDetails";
 import Torte from "./TorteDetails"
 
-const data =  { 
+export const data =  { 
   Biscotti,
   CheeseCakes,
   Ciambelloni,
@@ -18,4 +18,3 @@ const data =  {
   Torte
 };
 
-export default data;

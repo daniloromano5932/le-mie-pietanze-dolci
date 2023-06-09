@@ -15,7 +15,6 @@ const HomePageCategories = [
     image: TorteDetails[Math.floor(Math.random()*TorteDetails.length)].image,
     alt: "Immagine Torta",
     href: "Torte",
-    button: "Apri",
     total: TorteDetails.length 
   },
   {
@@ -24,7 +23,6 @@ const HomePageCategories = [
     image: CrostateDetails[Math.floor(Math.random()*CrostateDetails.length)].image,
     alt: "Immagine Crostate",
     href: "Crostate",
-    button: "Apri",
     total: CrostateDetails.length
   },
   {
@@ -33,7 +31,6 @@ const HomePageCategories = [
     image: MuffinsAndCupcakes[Math.floor(Math.random()*MuffinsAndCupcakes.length)].image,
     alt: "Immagine Muffins & Cupcakes",
     href: "MuffinsAndCupcakes",
-    button: "Apri",
     total: MuffinsAndCupcakes.length
   },
   {
@@ -42,7 +39,6 @@ const HomePageCategories = [
     image: CiambelloniDetails[Math.floor(Math.random()*CiambelloniDetails.length)].image,
     alt: "Immagine Ciambelloni",
     href: 'Ciambelloni',
-    button: "Apri",
     total: CiambelloniDetails.length
   },
   {
@@ -51,7 +47,6 @@ const HomePageCategories = [
     image: CheesecakesDetails[Math.floor(Math.random()*CheesecakesDetails.length)].image,
     alt: "Immagine CheeseCakes",
     href: "CheeseCakes",
-    button: "Apri",
     total: CheesecakesDetails.length
   },
   {
@@ -60,7 +55,6 @@ const HomePageCategories = [
     image: FrittelleDetails[Math.floor(Math.random()*FrittelleDetails.length)].image,
     alt: "Immagine Frittelle",
     href: "Frittelle",
-    button: "Apri",
     total: FrittelleDetails.length
   },
   {
@@ -69,7 +63,6 @@ const HomePageCategories = [
     image: BiscottiDetails[Math.floor(Math.random()*BiscottiDetails.length)].image,
     alt: "Immagine Biscotti",
     href: "Biscotti",
-    button: "Apri",
     total: BiscottiDetails.length
   },
   {
@@ -78,7 +71,6 @@ const HomePageCategories = [
     image: RotoliDetails[Math.floor(Math.random()*RotoliDetails.length)].image,
     alt: "Immagine Rotoli",
     href: "Rotoli",
-    button: "Apri",
     total: RotoliDetails.length
   }
 ]
