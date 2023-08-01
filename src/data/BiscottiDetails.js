@@ -1,17 +1,17 @@
 const Biscotti = [
   {
     id: 1,
-    title:"Biscotti & Pasticcini",
+    title: "Biscotti & Pasticcini",
     name: "Biscotto1",
     image: "images/Biscotti/20210730_124334.jpg",
     alt: "Immagine Biscotto1",
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210730_124334.jpg"],
-     ingredients: ["panna", "frutta", "ribes rossi"],
+    ingredients: ["panna", "frutta", "ribes rossi"],
     occasions: [""],
     colors: ["rosa", "rosso"],
-    keywords:["mare", "conchiglie"],
+    keywords: ["mare", "conchiglie"],
     audience: [""]
   },
   {
@@ -21,11 +21,11 @@ const Biscotti = [
     alt: "Immagine Biscotto2",
     href: "",
     button: "Vedi",
-    extra: [ "images/Biscotti/20210822_171605.jpg"],
-     ingredients: [""],
+    extra: ["images/Biscotti/20210822_171605.jpg"],
+    ingredients: [""],
     occasions: ["carnevale"],
     colors: [""],
-    keywords:["maschera"],
+    keywords: ["maschera"],
     audience: [""]
   },
   {
@@ -35,11 +35,11 @@ const Biscotti = [
     alt: "Immagine Biscotto3",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20210822_173128 (1).jpg","images/Biscotti/Screenshot_20210822-113059_Gallery.jpg"],
-     ingredients: ["panna"],
+    extra: ["images/Biscotti/20210822_173128 (1).jpg", "images/Biscotti/Screenshot_20210822-113059_Gallery.jpg"],
+    ingredients: ["panna"],
     occasions: ["san valentino"],
     colors: [""],
-    keywords:["cuore"],
+    keywords: ["cuore"],
     audience: [""]
 
   },
@@ -51,10 +51,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210822_180544.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: [""],
     colors: ["azzurro"],
-    keywords:["cuore"],
+    keywords: ["cuore"],
     audience: [""]
 
   },
@@ -66,10 +66,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210823_164348.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: [""],
     colors: ["azzurro"],
-    keywords:["cuore"],
+    keywords: ["cuore"],
     audience: [""]
 
   },
@@ -81,10 +81,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210823_171641.jpg"],
-     ingredients: ["crema"],
+    ingredients: ["crema"],
     occasions: [""],
     colors: ["rosa"],
-    keywords:["cuore"],
+    keywords: ["cuore"],
     audience: [""]
   },
   {
@@ -94,11 +94,11 @@ const Biscotti = [
     alt: "Immagine Biscotto7",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20211204_101235.jpg","images/Biscotti/20211208_181618.jpg"],
-     ingredients: ["cioccolato"],
+    extra: ["images/Biscotti/20211204_101235.jpg", "images/Biscotti/20211208_181618.jpg"],
+    ingredients: ["cioccolato"],
     occasions: ["natale"],
     colors: [""],
-    keywords:["alberi", "candele", "stelle"],
+    keywords: ["alberi", "candele", "stelle"],
     audience: [""]
   },
   {
@@ -108,11 +108,11 @@ const Biscotti = [
     alt: "Immagine Biscotto8",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20211204_164648.jpg","images/Biscotti/20211204_162914.jpg","images/Biscotti/20211204_162830.jpg","images/Biscotti/20211214_204744.jpg","images/Biscotti/20211214_203259.jpg","images/Biscotti/20211215_072454.jpg", "images/Biscotti/20211214_203847.jpg","images/Biscotti/20211204_164157.jpg"],
-     ingredients: ["crema"],
+    extra: ["images/Biscotti/20211204_164648.jpg", "images/Biscotti/20211204_162914.jpg", "images/Biscotti/20211204_162830.jpg", "images/Biscotti/20211214_204744.jpg", "images/Biscotti/20211214_203259.jpg", "images/Biscotti/20211215_072454.jpg", "images/Biscotti/20211214_203847.jpg", "images/Biscotti/20211204_164157.jpg"],
+    ingredients: ["crema"],
     occasions: ["natale"],
     colors: ["blu"],
-    keywords:["candele"],
+    keywords: ["candele"],
     audience: [""]
   },
   {
@@ -123,10 +123,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20211213_204610.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: ["natale"],
     colors: [""],
-    keywords:["stelle"],
+    keywords: ["stelle"],
     audience: [""]
   },
 
@@ -138,10 +138,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220125_200248.jpg"],
-     ingredients: ["frutta", "more"],
+    ingredients: ["frutta", "more"],
     occasions: [""],
     colors: ["rosa"],
-    keywords:["cuore"],
+    keywords: ["cuore"],
     audience: [""]
   },
   {
@@ -152,10 +152,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/Screenshot_20210818-102352_Gallery.jpg"],
-     ingredients: ["panna"],
+    ingredients: ["panna"],
     occasions: [""],
     colors: ["azzurro", "blu"],
-    keywords:["conchiglia", "stelle", "mare"],
+    keywords: ["conchiglia", "stelle", "mare"],
     audience: [""]
   },
   {
@@ -166,10 +166,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220125_200310.jpg"],
-     ingredients: ["crema", "frutta", "kiwi", "ciliegie"],
+    ingredients: ["crema", "frutta", "kiwi", "ciliegie"],
     occasions: [""],
     colors: ["verde"],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
   },
   {
@@ -180,10 +180,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220228_212810.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: ["carnevale"],
     colors: [""],
-    keywords:["maschera"],
+    keywords: ["maschera"],
     audience: [""]
   },
   {
@@ -194,10 +194,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220301_183110.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: ["carnevale"],
     colors: ["verde", "rosa", "giallo"],
-    keywords:["maschera"],
+    keywords: ["maschera"],
     audience: [""]
   },
   {
@@ -207,11 +207,11 @@ const Biscotti = [
     alt: "Immagine Biscotto15",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20220408_212136.jpg", "images/Biscotti/20220408_211325.jpg", "images/Biscotti/20220408_214149.jpg", "images/Biscotti/20220408_203224.jpg", "images/Biscotti/20220409_090435.jpg", "images/Biscotti/20220408_195912.jpg","images/Biscotti/20220408_203203.jpg" ],
+    extra: ["images/Biscotti/20220408_212136.jpg", "images/Biscotti/20220408_211325.jpg", "images/Biscotti/20220408_214149.jpg", "images/Biscotti/20220408_203224.jpg", "images/Biscotti/20220409_090435.jpg", "images/Biscotti/20220408_195912.jpg", "images/Biscotti/20220408_203203.jpg"],
     ingredients: ["cioccolato", "panna"],
     occasions: [""],
     colors: ["azzurro"],
-    keywords:["cestini"],
+    keywords: ["cestini"],
     audience: [""]
   },
   {
@@ -222,10 +222,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220529_183903.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: [""],
     colors: ["blu", "azzurro"],
-    keywords:["atelle", "fiori"],
+    keywords: ["atelle", "fiori"],
     audience: [""]
 
   },
@@ -237,10 +237,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210615_153750.jpg"],
-     ingredients: ["panna"],
+    ingredients: ["panna"],
     occasions: [""],
     colors: ["azzurro"],
-    keywords:["mare", "conchiglia"],
+    keywords: ["mare", "conchiglia"],
     audience: [""]
 
   },
@@ -252,10 +252,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/IMG_20190317_133652.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: [""],
     colors: [""],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
 
   },
@@ -267,10 +267,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20201206_100900.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: [""],
     colors: [""],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
   },
   {
@@ -281,10 +281,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210615_204904.jpg"],
-     ingredients: ["frutta", "ciliegia", "crema"],
+    ingredients: ["frutta", "ciliegia", "crema"],
     occasions: [""],
     colors: ["rosso"],
-    keywords:["stelle"],
+    keywords: ["stelle"],
     audience: [""]
   },
   {
@@ -295,10 +295,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210729_183040.jpg"],
-     ingredients: ["frutta", "ribes rossi", "mirtilli", "cioccolato", "panna", "cocco"],
+    ingredients: ["frutta", "ribes rossi", "mirtilli", "cioccolato", "panna", "cocco"],
     occasions: [""],
     colors: ["verde", "rosso", "rosa", "nero"],
-    keywords:["tortini", "cuori"],
+    keywords: ["tortini", "cuori"],
     audience: [""]
   },
   {
@@ -309,10 +309,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/Screenshot_20210818-102914_Gallery.jpg"],
-     ingredients: ["frutta", "kiwi", "ciliegie", "crema"],
+    ingredients: ["frutta", "kiwi", "ciliegie", "crema"],
     occasions: [""],
     colors: ["verde"],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
   },
   {
@@ -323,10 +323,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20210822_170755.jpg"],
-     ingredients: ["cioccolato"],
+    ingredients: ["cioccolato"],
     occasions: ["halloween"],
     colors: [""],
-    keywords:["zucche", "fantasmi", "mostri", "autunno"],
+    keywords: ["zucche", "fantasmi", "mostri", "autunno"],
     audience: [""]
   },
   {
@@ -336,11 +336,11 @@ const Biscotti = [
     alt: "Immagine Crostato24",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20220110_143017.jpg","images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.39 AM.jpeg","images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.39 AM (1).jpeg","images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.39 AM (2).jpeg"],
-     ingredients: ["cioccolato"],
+    extra: ["images/Biscotti/20220110_143017.jpg", "images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.39 AM.jpeg", "images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.39 AM (1).jpeg", "images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.39 AM (2).jpeg"],
+    ingredients: ["cioccolato"],
     occasions: [""],
     colors: ["verde", "azzurro"],
-    keywords:["tortini", "crostatine", "fiori"],
+    keywords: ["tortini", "crostatine", "fiori"],
     audience: [""]
   },
   {
@@ -351,10 +351,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220205_233047.jpg"],
-     ingredients: ["cioccolato", "frutta", "marmellata"],
+    ingredients: ["cioccolato", "frutta", "marmellata"],
     occasions: [""],
     colors: [""],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
   },
   {
@@ -365,10 +365,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220205_234227.jpg", "images/Biscotti/WhatsApp Image 2022-12-27 at 10.16.45 PM.jpeg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: [""],
     colors: [""],
-    keywords:["tortini", "maglia"],
+    keywords: ["tortini", "maglia"],
     audience: [""]
   },
   {
@@ -378,11 +378,11 @@ const Biscotti = [
     alt: "Immagine Biscotto27",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20220228_215532.jpg","images/Biscotti/20220228_215637.jpg","images/Biscotti/20220228_215732.jpg"],
-     ingredients: ["panna", "cioccolato", "frutta", "marmellata"],
+    extra: ["images/Biscotti/20220228_215532.jpg", "images/Biscotti/20220228_215637.jpg", "images/Biscotti/20220228_215732.jpg"],
+    ingredients: ["panna", "cioccolato", "frutta", "marmellata"],
     occasions: [""],
     colors: ["rosa"],
-    keywords:["tortini", "crostatine", "stelle"],
+    keywords: ["tortini", "crostatine", "stelle"],
     audience: [""]
   },
   {
@@ -392,11 +392,11 @@ const Biscotti = [
     alt: "Immagine Biscotto28",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20220305_191043.jpg","images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.40 AM (5).jpeg"],
-     ingredients: ["frutta", "marmellata", "fragole"],
+    extra: ["images/Biscotti/20220305_191043.jpg", "images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.40 AM (5).jpeg"],
+    ingredients: ["frutta", "marmellata", "fragole"],
     occasions: [""],
     colors: ["rosso"],
-    keywords:["tortini","fiori"],
+    keywords: ["tortini", "fiori"],
     audience: [""]
   },
   {
@@ -407,11 +407,11 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220305_192932.jpg"],
-     ingredients: ["frutta", "marmellata", "fragole"],
+    ingredients: ["frutta", "marmellata", "fragole"],
     occasions: [""],
     colors: [""],
-    keywords:["tortini", "fiori"],
-    audience: [""] 
+    keywords: ["tortini", "fiori"],
+    audience: [""]
   },
   {
     id: 30,
@@ -421,10 +421,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220207_211035.jpg"],
-     ingredients: ["frutta", "fragole", "cioccolato"],
+    ingredients: ["frutta", "fragole", "cioccolato"],
     occasions: [""],
     colors: ["rosso"],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
   },
   {
@@ -434,11 +434,11 @@ const Biscotti = [
     alt: "Immagine Biscotto31",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20220214_163024.jpg","images/Biscotti/20220214_163115.jpg", "images/Biscotti/20220213_210830.jpg"],
-     ingredients: ["panna", "cioccolato"],
+    extra: ["images/Biscotti/20220214_163024.jpg", "images/Biscotti/20220214_163115.jpg", "images/Biscotti/20220213_210830.jpg"],
+    ingredients: ["panna", "cioccolato"],
     occasions: [""],
     colors: ["azzurro"],
-    keywords:["tortini"],
+    keywords: ["tortini"],
     audience: [""]
   },
   {
@@ -449,10 +449,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220305_222524.jpg"],
-     ingredients: ["frutta", "fragole", "cioccolato", "crema"],
+    ingredients: ["frutta", "fragole", "cioccolato", "crema"],
     occasions: [""],
     colors: ["rosso"],
-    keywords:["tortini"],
+    keywords: ["tortini"],
     audience: [""]
   },
   {
@@ -463,10 +463,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220313_114228.jpg"],
-     ingredients: ["panna", "cioccolato"],
+    ingredients: ["panna", "cioccolato"],
     occasions: [""],
     colors: ["rosa"],
-    keywords:["tortini", "fiori"],
+    keywords: ["tortini", "fiori"],
     audience: [""]
   },
   {
@@ -476,11 +476,11 @@ const Biscotti = [
     alt: "Immagine Biscotto34",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20220319_091246.jpg","images/Biscotti/20220319_090007.jpg","images/Biscotti/20220319_090033.jpg","images/Biscotti/20220319_090345.jpg"],
-     ingredients: ["frutta", "panna", "crema", "fragole", "ciliegie"],
+    extra: ["images/Biscotti/20220319_091246.jpg", "images/Biscotti/20220319_090007.jpg", "images/Biscotti/20220319_090033.jpg", "images/Biscotti/20220319_090345.jpg"],
+    ingredients: ["frutta", "panna", "crema", "fragole", "ciliegie"],
     occasions: [""],
     colors: ["rosso"],
-    keywords:["bigne"],
+    keywords: ["bigne"],
     audience: [""]
   },
   {
@@ -491,10 +491,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220527_214334.jpg"],
-     ingredients: ["cioccolato", "crema"],
+    ingredients: ["cioccolato", "crema"],
     occasions: [""],
     colors: [""],
-    keywords:["tortini"],
+    keywords: ["tortini"],
     audience: [""]
   },
   {
@@ -505,10 +505,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/IMG_20221118_231108.jpg"],
-     ingredients: ["panna"],
+    ingredients: ["panna"],
     occasions: [""],
     colors: ["bianco", "azzurro", "blu"],
-    keywords:["tortini"],
+    keywords: ["tortini"],
     audience: [""]
   },
   {
@@ -518,11 +518,11 @@ const Biscotti = [
     alt: "Immagine Biscotto37",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20211224_181206.jpg","images/Biscotti/20211224_181705.jpg"],
-     ingredients: ["marzapane", "ghiaccia reale", "zenzero"],
+    extra: ["images/Biscotti/20211224_181206.jpg", "images/Biscotti/20211224_181705.jpg"],
+    ingredients: ["marzapane", "ghiaccia reale", "zenzero"],
     occasions: ["natale"],
     colors: ["bianco", "rosso", "marrone"],
-    keywords:["casa", "famiglia"],
+    keywords: ["casa", "famiglia"],
     audience: ["bambini", "famiglie"]
   },
   {
@@ -533,10 +533,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20211208_123559.jpg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: ["natale"],
     colors: [""],
-    keywords:["alberi", "stelle", "stivali"],
+    keywords: ["alberi", "stelle", "stivali"],
     audience: [""]
   },
   {
@@ -546,11 +546,11 @@ const Biscotti = [
     alt: "Immagine Biscotto39",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/20201223_182254.jpg","images/Biscotti/20210822_171002.jpg"],
-     ingredients: ["cioccolato", "crema"],
+    extra: ["images/Biscotti/20201223_182254.jpg", "images/Biscotti/20210822_171002.jpg"],
+    ingredients: ["cioccolato", "crema"],
     occasions: ["natale"],
     colors: [""],
-    keywords:["platzchen", "tortini", "alberi", "cuori"],
+    keywords: ["platzchen", "tortini", "alberi", "cuori"],
     audience: [""]
   },
   {
@@ -560,11 +560,11 @@ const Biscotti = [
     alt: "Immagine Biscotto40",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.40 AM (3).jpeg","images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.41 AM (2).jpeg"],
+    extra: ["images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.40 AM (3).jpeg", "images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.41 AM (2).jpeg"],
     ingredients: [""],
     occasions: [""],
     colors: [""],
-    keywords:["rosa"],
+    keywords: ["rosa"],
     audience: [""]
   },
   {
@@ -574,11 +574,11 @@ const Biscotti = [
     alt: "Immagine Biscotto41",
     href: "",
     button: "Vedi",
-    extra: ["images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.41 AM (3).jpeg","images/Biscotti/WhatsApp Image 2022-12-18 at 11.39.48 PM.jpeg"],
-     ingredients: ["panna"],
+    extra: ["images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.41 AM (3).jpeg", "images/Biscotti/WhatsApp Image 2022-12-18 at 11.39.48 PM.jpeg"],
+    ingredients: ["panna"],
     occasions: [""],
     colors: ["blu", "bianco"],
-    keywords:["mare", "conchiglie"],
+    keywords: ["mare", "conchiglie"],
     audience: [""]
   },
   {
@@ -589,10 +589,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.42 AM (1).jpeg"],
-     ingredients: ["panna"],
+    ingredients: ["panna"],
     occasions: [""],
     colors: [""],
-    keywords:["mare", "conchiglie"],
+    keywords: ["mare", "conchiglie"],
     audience: [""]
   },
   {
@@ -603,10 +603,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.42 AM (2).jpeg", "images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.42 AM (3).jpeg", "images/Biscotti/WhatsApp Image 2022-12-18 at 10.46.40 AM (4).jpeg"],
-     ingredients: ["crema", "frutta", "ciliegia"],
+    ingredients: ["crema", "frutta", "ciliegia"],
     occasions: [""],
     colors: ["rosso"],
-    keywords:["tortini", "cuori"],
+    keywords: ["tortini", "cuori"],
     audience: [""]
   },
   {
@@ -617,10 +617,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/20220410_144144.jpg"],
-     ingredients: ["cioccolato", "frutta", "panna", "fragole"],
+    ingredients: ["cioccolato", "frutta", "panna", "fragole"],
     occasions: [""],
     colors: ["rosso", "azzurro"],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
   },
   {
@@ -631,10 +631,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/IMG_20221122_215718.jpg"],
-     ingredients: ["panna"],
+    ingredients: ["panna"],
     occasions: [""],
     colors: ["bianco"],
-    keywords:[""],
+    keywords: [""],
     audience: [""]
   },
   {
@@ -645,10 +645,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-27 at 10.04.13 PM.jpeg"],
-     ingredients: ["panna"],
+    ingredients: ["panna"],
     occasions: [""],
     colors: ["bianco", "azzurro"],
-    keywords:["tortini"],
+    keywords: ["tortini"],
     audience: [""]
   },
   {
@@ -659,10 +659,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-27 at 10.13.38 PM.jpeg"],
-     ingredients: ["cioccolato", "panna"],
+    ingredients: ["cioccolato", "panna"],
     occasions: [""],
     colors: ["azzurro"],
-    keywords:["mare", "stelle", "conchiglie"],
+    keywords: ["mare", "stelle", "conchiglie"],
     audience: ["bambini"]
   },
   {
@@ -673,10 +673,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-27 at 10.18.38 PM.jpeg"],
-     ingredients: ["frutta", "marmellata"],
+    ingredients: ["frutta", "marmellata"],
     occasions: ["halloween"],
     colors: ["rosso"],
-    keywords:["dita", "mostri", "autunno"],
+    keywords: ["dita", "mostri", "autunno"],
     audience: ["bambini"]
   },
   {
@@ -687,10 +687,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-27 at 10.32.02 PM.jpeg", "images/Biscotti/WhatsApp Image 2022-12-27 at 10.35.44 PM.jpeg"],
-     ingredients: [""],
+    ingredients: [""],
     occasions: ["natale"],
     colors: ["verde", "rosa", "bianco"],
-    keywords:["platzchen"],
+    keywords: ["platzchen"],
     audience: [""]
   },
   {
@@ -701,10 +701,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-27 at 10.37.24 PM.jpeg"],
-     ingredients: ["panna", "cioccolato"],
+    ingredients: ["panna", "cioccolato"],
     occasions: [""],
     colors: ["giallo", "bianco"],
-    keywords:["fiuori"],
+    keywords: ["fiuori"],
     audience: [""]
   },
   {
@@ -715,10 +715,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-27 at 10.38.41 PM.jpeg", "images/Biscotti/WhatsApp Image 2022-12-27 at 10.38.40 PM.jpeg"],
-     ingredients: ["zenzero", "ghiaccia reale"],
+    ingredients: ["zenzero", "ghiaccia reale"],
     occasions: ["natale"],
     colors: ["bianco", "rosa", "marrone"],
-    keywords:["casa"],
+    keywords: ["casa"],
     audience: [""]
   },
   {
@@ -729,10 +729,10 @@ const Biscotti = [
     href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2022-12-27 at 10.40.08 PM.jpeg"],
-     ingredients: ["cioccolato", "panna"],
+    ingredients: ["cioccolato", "panna"],
     occasions: [""],
     colors: ["rosa", "giallo"],
-    keywords:["fiori"],
+    keywords: ["fiori"],
     audience: [""]
   },
   {
@@ -740,14 +740,14 @@ const Biscotti = [
     name: "Biscotto53",
     image: "images/Biscotti/WhatsApp Image 2023-05-21 at 7.04.38 PM.jpeg",
     alt: "Immagine ",
-    href: "",    
+    href: "",
     button: "Vedi",
     extra: ["images/Biscotti/WhatsApp Image 2023-05-21 at 7.04.38 PM.jpeg"],
-  ingredients: [],
+    ingredients: [],
     occasions: ["san valentino"],
     colors: ["rosso"],
-    keywords:["cuori"],
-    audience: [""]  
+    keywords: ["cuori"],
+    audience: [""]
   }
 ]
 

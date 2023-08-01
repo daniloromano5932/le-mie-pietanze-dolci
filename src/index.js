@@ -20,9 +20,9 @@ root.render(
       <Route path='/categories/:category' element={<Category />} />
       <Route path='/error' element={<Error />} />
       <Route path="/search" element={<Search />} />
-      <Route path="/categories" element={<Categories/>} />
+      <Route path="/categories" element={<Categories />} />
     </Routes>
-    <Footer/>
+    <Footer />
   </BrowserRouter>
 );
 

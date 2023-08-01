@@ -1,6 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import { data } from "../data"
 import { useState } from 'react';
+import { Container, Row, Col } from "react-bootstrap";
 import Card from '../components/Card';
 
 
@@ -18,6 +19,7 @@ function Search() {
       || item.keywords.map((singleKeyword) => singleKeyword.toLowerCase()).includes(text.toLowerCase())
       || item.audience.map((singleAudience) => singleAudience.toLowerCase()).includes(text.toLowerCase())))
   }
+
   return (
     <div className='d-flex align-items-center justify-content-center'>
       <div className='search'>
@@ -31,17 +33,36 @@ function Search() {
             onChange={handleChange}
           />
         </Form>
-        <div className="row cards-section d-flex align-items-center justify-content-center" id='padding-footer'>
-        {searchResults.map((result) => {
-          return <Card
-            // key={result.id + result.name}
-            key={Math.random()}
-            data={result}
-          />
-        })}
+        <Container className="colored-section">
+          <Row lg={4} xl={4} md={4} xxl={4} className="categories-cards align-items-center justify-content-center">
+            {!searchResults ? items.map((item) => {
+              return <Col><Card
+                key={Math.random()}
+                data={item}
+              />
+              </Col>
+            }) : searchResults.map((result) => {
+              return <Col><Card
+                key={Math.random()}
+                data={result}
+              />
+              </Col>
+            })}
+          </Row>
+
+
+        </Container>
+
+
+        {/* <div className="row cards-section d-flex align-items-center justify-content-center" id='padding-footer'>
+          {searchResults.map((result) => {
+            return <Card
+              key={Math.random()}
+              data={result}
+            />
+          })}
+        </div> */}
       </div>
-      </div>
-   
     </div>
   );
 }

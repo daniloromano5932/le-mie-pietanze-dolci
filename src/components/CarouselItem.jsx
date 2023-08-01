@@ -8,7 +8,9 @@ function CarouselItem(props) {
         key={item}>
         <img
           className={"big-pic"}
-          src={"../" + item} />
+          src={"../" + item}
+          alt="Immagine secondaria del dolce"
+        />
       </Carousel.Item>
     ))}
   </Carousel>

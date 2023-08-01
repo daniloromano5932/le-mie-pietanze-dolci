@@ -4,6 +4,9 @@ TO DO LIST
 match singular and plural of keywords
 move torte alla frutta from crostate
 home page features size
+fix categories's not going behind the Navbar
+make navbar responsive
+fix footer in different sizes
 ***********************************************
 collapsed pa:
 fix title

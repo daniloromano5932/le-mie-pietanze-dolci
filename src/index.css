@@ -1,7 +1,8 @@
-/* Color Palette
-https://colorhunt.co/palette/f3c5c5c1a3a3886f6f694e4e  */
-
 /*ELEMENTS */
+
+.me-auto, .aa {
+  color: aliceblue !important;
+}
 
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -21,12 +22,9 @@ h6 {
 
 /* HEADINGS */
 
-
-
-  .torte-component {
-    color: #815B5B;
-  }
-
+.torte-component {
+  color: #815B5B;
+}
 
 .text {
   background-color: aqua;
@@ -36,15 +34,6 @@ h6 {
   margin-left: 400px;
 }
 
- 
-
-/* CONTAINERS */
-
-/* 
-#features {
-  position: relative;
-} */
-
 /*NAVBAR*/
 
 .colored-section {
@@ -52,17 +41,13 @@ h6 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 .card-title {
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .categories-cards {
   padding-top: 50px;
 }
-
-
-
 
 .category-title {
   text-align: center;
@@ -77,14 +62,13 @@ h6 {
   color: #FFF8EA !important;
 }
 
-
 .container-fluid2 {
   margin-top: 100px;
 }
 
 .navbar {
   padding-top: 0.2rem;
-  background-color: #594545 !important;
+  background-image: linear-gradient(to bottom, #815B5B , #FFF8EA);
   width: 100% !important;
   left: 0;
   top: 0;
@@ -93,8 +77,8 @@ h6 {
 }
 
 .navbar.sticky {
- z-index: 200;
- box-shadow: 0 0 4px 4px #FFF8EA;
+  z-index: 200;
+  box-shadow: 0 0 4px 4px #FFF8EA;
 }
 
 .total-cakes {
@@ -112,7 +96,11 @@ h6 {
 .title-img {
   width: 800px;
   height: 600px;
-  object-fit:contain;
+  object-fit: contain;
+}
+
+.title-section {
+    background-image: linear-gradient(#594545,#FFF8EA);
 }
 
 .title-img2 {
@@ -125,19 +113,15 @@ h6 {
   padding: 0px;
 }
 
-
-
-
 .home-page-img {
   width: 500px;
   height: 500px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .home {
   margin-top: 200px;
 }
-
 
 .navbar-brand {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -163,7 +147,6 @@ h6 {
   color: #9E7676;
 }
 
-
 .navbar-nav {
   margin-right: 30%;
   margin-left: 60%;
@@ -179,12 +162,9 @@ h6 {
   margin-bottom: 50px;
 }
 
-
-
 .navbar-toggler {
   margin-right: 10%;
 }
-
 
 .navbar-brand:hover {
   transform: scale(1.5);
@@ -223,12 +203,9 @@ img {
   height: 100%;
 }
 
-
-
-
-
 .search {
   margin-top: 200px;
+  width: 1320px;
 }
 
 .title-image {
@@ -236,7 +213,7 @@ img {
   width: 900px;
   height: 600px;
   margin-left: 400px;
-  object-fit:cover   !important;
+  object-fit: cover !important;
 }
 
 .features-title {
@@ -244,81 +221,15 @@ img {
   font-size: 1.5rem;
   padding-top: 20px;
   margin-bottom: 30px;
-} 
-
-
-/* Features */
-/* .features-icon {
-  color: #ef8172;
 }
-
-.features-icon:hover {
-  color: #ff4c68;
-}
-
-.features-txt {
-  margin-top: 5px;
-  color: #8f8f8f;
-}
-
-
-
-
-/* Testimonials */
-
-/* .testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-} */
-
-/* Pricing Section */
-
-/* #pricing {
-  padding: 100px;
-}
-
- */
-
-/* .first_section_età {
-  background-color: #000B49;
-} */
-
-/* .second_section_innamorati {
-  background-color: #9B0000;
-}
-
-.third_section_anno {
-  background-color: #FF7272;
-}
-
-.fourth_section_varie {
-  background-color: #000B49;
-}
-
-.first_section_eventi {
-  background-color: #FFB5B5;
-}
- */
-
-
 
 /*CARDS*/
-
-
 
 .feature {
   margin-top: 30px;
   text-align: center;
-  color: #594545 ;
+  color: #594545;
 }
-
-
 
 .text-center {
   margin-top: 100px;
@@ -335,10 +246,11 @@ img {
 
 .features {
   margin-top: 100px;
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.row1, .row2 {
+.row1,
+.row2 {
   background-image: linear-gradient(#FFF8EA, #594545);
 }
 
@@ -351,23 +263,22 @@ img {
   margin-right: 0px !important;
 }
 
-
 .test {
   margin-top: 50px;
 }
 
 .btn:hover {
-  background-color:#594545;
+  background-color: #594545;
   box-shadow: 0 0 5px 5px #F5C6AA !important;
   color: #FDF6F0;
   position: relative;
   bottom: 2px;
   left: 2px;
-  
+
 }
 
 .btn {
-  background-color:antiquewhite;
+  background-color: antiquewhite;
   margin-top: 10px;
   color: #594545;
   padding-left: 0;
@@ -383,8 +294,6 @@ img {
   left: 2px;
 }
 
-
-
 /*FOOTER*/
 
 #footer {
@@ -392,8 +301,9 @@ img {
   box-shadow: 0 0 3px 3px #594545;
   width: 100%;
   height: 150px;
-  bottom: 0 !important;
+  position:relative;
   padding-top: 1px;
+  bottom: 0;
 }
 
 .card-link {

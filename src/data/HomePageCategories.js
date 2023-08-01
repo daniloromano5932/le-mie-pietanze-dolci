@@ -12,15 +12,15 @@ const HomePageCategories = [
     id: 1,
     title: "Le mie pietanze dolci",
     name: "Torte",
-    image: TorteDetails[Math.floor(Math.random()*TorteDetails.length)].image,
+    image: TorteDetails[Math.floor(Math.random() * TorteDetails.length)].image,
     alt: "Immagine Torta",
     href: "Torte",
-    total: TorteDetails.length 
+    total: TorteDetails.length
   },
   {
     id: 2,
     name: "Crostate",
-    image: CrostateDetails[Math.floor(Math.random()*CrostateDetails.length)].image,
+    image: CrostateDetails[Math.floor(Math.random() * CrostateDetails.length)].image,
     alt: "Immagine Crostate",
     href: "Crostate",
     total: CrostateDetails.length
@@ -28,7 +28,7 @@ const HomePageCategories = [
   {
     id: 3,
     name: "Muffins & Cupcakes",
-    image: MuffinsAndCupcakes[Math.floor(Math.random()*MuffinsAndCupcakes.length)].image,
+    image: MuffinsAndCupcakes[Math.floor(Math.random() * MuffinsAndCupcakes.length)].image,
     alt: "Immagine Muffins & Cupcakes",
     href: "MuffinsAndCupcakes",
     total: MuffinsAndCupcakes.length
@@ -36,7 +36,7 @@ const HomePageCategories = [
   {
     id: 4,
     name: "Ciambelloni",
-    image: CiambelloniDetails[Math.floor(Math.random()*CiambelloniDetails.length)].image,
+    image: CiambelloniDetails[Math.floor(Math.random() * CiambelloniDetails.length)].image,
     alt: "Immagine Ciambelloni",
     href: 'Ciambelloni',
     total: CiambelloniDetails.length
@@ -44,7 +44,7 @@ const HomePageCategories = [
   {
     id: 5,
     name: "CheeseCakes",
-    image: CheesecakesDetails[Math.floor(Math.random()*CheesecakesDetails.length)].image,
+    image: CheesecakesDetails[Math.floor(Math.random() * CheesecakesDetails.length)].image,
     alt: "Immagine CheeseCakes",
     href: "CheeseCakes",
     total: CheesecakesDetails.length
@@ -52,7 +52,7 @@ const HomePageCategories = [
   {
     id: 6,
     name: "Frittelle",
-    image: FrittelleDetails[Math.floor(Math.random()*FrittelleDetails.length)].image,
+    image: FrittelleDetails[Math.floor(Math.random() * FrittelleDetails.length)].image,
     alt: "Immagine Frittelle",
     href: "Frittelle",
     total: FrittelleDetails.length
@@ -60,7 +60,7 @@ const HomePageCategories = [
   {
     id: 7,
     name: "Biscotti & Pasticcini",
-    image: BiscottiDetails[Math.floor(Math.random()*BiscottiDetails.length)].image,
+    image: BiscottiDetails[Math.floor(Math.random() * BiscottiDetails.length)].image,
     alt: "Immagine Biscotti",
     href: "Biscotti",
     total: BiscottiDetails.length
@@ -68,7 +68,7 @@ const HomePageCategories = [
   {
     id: 8,
     name: "Rotoli",
-    image: RotoliDetails[Math.floor(Math.random()*RotoliDetails.length)].image,
+    image: RotoliDetails[Math.floor(Math.random() * RotoliDetails.length)].image,
     alt: "Immagine Rotoli",
     href: "Rotoli",
     total: RotoliDetails.length

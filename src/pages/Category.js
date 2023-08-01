@@ -20,27 +20,26 @@ function Category() {
     <div className="torte-component align-items-center justify-content-center ">
       <div className=" d-flex row colored-section align-items-center justify-content-center">
         <div className="align-items-center justify-content-center title-section">
-          <Title 
-          title={category}
-          img={products}
-           />
+          <Title
+            title={category}
+            img={products}
+          />
           <h5 className='total-cakes'>Per un totale di {products.length}</h5>
         </div>
       </div>
       <div className="test align-items-center justify-content-center">
-     <Container className="colored-section align-items-center justify-content-center">
-           <Row lg={4} md={2} sm={1} xs={1} className="categories-cards align-items-center justify-content-center">
-           {products.map((item) => (
-            <Col>
-          <Card 
-            key={item.id}
-            data={item}
-          />
-        </Col>
-        ))}
-        
-           </Row>
-      </Container>
+        <Container className="colored-section align-items-center justify-content-center">
+          <Row lg={4} md={2} sm={1} xs={1} className="categories-cards align-items-center justify-content-center">
+            {products.map((item) => (
+              <Col>
+                <Card
+                  key={item.id}
+                  data={item}
+                />
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
     </div>
   )

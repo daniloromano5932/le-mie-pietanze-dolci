@@ -1,12 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import HomePageCategories from "./data/HomePageCategories.js";
 import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
-  const totalCakes = HomePageCategories.reduce((accumulator, object) => {
-    return accumulator + object.total;
-  }, 0);
+  // const totalCakes = HomePageCategories.reduce((accumulator, object) => {
+  //   return accumulator + object.total;
+  // }, 0);
 
   return (
     <div className={"App"}>
@@ -23,12 +22,12 @@ function App() {
             </div>
           </Col>
           <Col className='feature'>
-            <img src='/images/Crostate/20220205_105049.jpg' className='home-page-img'></img>
+            <img src='/images/Crostate/20220205_105049.jpg' className='home-page-img' alt='immagine crostata alla frutta'></img>
           </Col>
         </Row>
         <Row className='row2'>
           <Col className='feature'>
-            <img src='/images/Torte/WhatsApp Image 2022-12-27 at 9.53.05 PM.jpeg' className='home-page-img'></img>
+            <img src='/images/Torte/WhatsApp Image 2022-12-27 at 9.53.05 PM.jpeg' className='home-page-img' alt='immagine torta personalizzata'></img>
           </Col>
           <Col className='feature'>
             <div className=" text-center ">
@@ -36,7 +35,7 @@ function App() {
                 <path fillRule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125ZM8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
               </svg></i>
               <h4 className="features-title">Basta chiedere</h4>
-              <h5 className="features-txt">Vorresti una combinazione di una o più pietanze? <br/> Chiedi pure!</h5>
+              <h5 className="features-txt">Vorresti una combinazione di una o più pietanze? <br /> Chiedi pure!</h5>
             </div>
           </Col>
         </Row>
