@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Card from '../components/Card';
 import Pages from '../components/Pagination';
+import NoResult from '../components/NoResults';
 
 function Search() {
   const [activePage, setActivePage] = useState(1)
@@ -42,8 +43,8 @@ function Search() {
           />
         </Form>
         <Container className="colored-section">
+        {searchItemsToShow.length === 0 && <NoResult/>}
           <Row lg={4} xl={4} md={4} xxl={4} className="categories-cards align-items-center justify-content-center">
-            {searchItemsToShow.length === 0 && <p>No Results.</p>}
             {searchItemsToShow.map((result) => (
               <Col
                 key={result.name}
