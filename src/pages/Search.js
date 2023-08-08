@@ -43,7 +43,7 @@ function Search() {
           />
         </Form>
         <Container className="colored-section">
-        {searchItemsToShow.length === 0 && <NoResult/>}
+        {searchItemsToShow.length === 0 && <h3 className="no-results">Sembra che non ci siano risultati per la tua ricerca</h3>}
           <Row lg={4} xl={4} md={4} xxl={4} className="categories-cards align-items-center justify-content-center">
             {searchItemsToShow.map((result) => (
               <Col
