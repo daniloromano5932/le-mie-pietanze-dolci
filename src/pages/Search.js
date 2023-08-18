@@ -4,13 +4,12 @@ import { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Card from '../components/Card';
 import Pages from '../components/Pagination';
-import NoResult from '../components/NoResults';
 
 function Search() {
   const [activePage, setActivePage] = useState(1)
 
-  function handlePageChange(page) {
-    setActivePage(page)
+  function handlePageChange(newPageNumber) {
+    setActivePage(newPageNumber)
   }
 
   const items = Object.values(data).flat();
@@ -44,7 +43,7 @@ function Search() {
         </Form>
         <Container className="colored-section">
         {searchItemsToShow.length === 0 && <h3 className="no-results">Sembra che non ci siano risultati per la tua ricerca</h3>}
-          <Row lg={4} xl={4} md={4} xxl={4} className="categories-cards align-items-center justify-content-center">
+          <Row lg={4} md={2} sm={1} xs={1} className="categories-cards align-items-center justify-content-center">
             {searchItemsToShow.map((result) => (
               <Col
                 key={result.name}
@@ -58,6 +57,7 @@ function Search() {
           <Pages
             handlePageChange={handlePageChange}
             activePage={activePage}
+            lastPage={Math.ceil(items.length / itemsPerPage)}
           />
         </Container>
       </div>
