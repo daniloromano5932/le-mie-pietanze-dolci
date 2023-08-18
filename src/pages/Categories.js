@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Card from "../components/Card";
 
 function Categories() {
-
   return (
     <div className="test">
       <Container className="colored-section">
@@ -11,7 +10,6 @@ function Categories() {
           {HomePageCategories.map((category) => (
             <Col key={category.id}>
               <Card
-                
                 data={category}
               />
             </Col>
@@ -23,9 +21,3 @@ function Categories() {
 }
 
 export default Categories;
-
-
-
-
-
-// 
