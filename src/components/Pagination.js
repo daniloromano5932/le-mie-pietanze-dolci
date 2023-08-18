@@ -1,6 +1,6 @@
 import Pagination from 'react-bootstrap/Pagination';
 
-function AdvancedExample({ activePage, handlePageChange, lastPage }) {
+function Pages({ activePage, handlePageChange, lastPage }) {
   return (
     <Pagination size='lg'>
           {activePage > 1  && <Pagination.Prev onClick={() => handlePageChange(activePage-1)}/>}
@@ -16,4 +16,4 @@ function AdvancedExample({ activePage, handlePageChange, lastPage }) {
   );
 }
 
-export default AdvancedExample;
+export default Pages;
