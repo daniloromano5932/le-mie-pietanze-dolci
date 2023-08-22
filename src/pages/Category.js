@@ -74,6 +74,7 @@ function Category() {
         />
       )}
         <Pages
+        className="pagination"
             handlePageChange={handlePageChange}
             activePage={activePage}
             lastPage={Math.ceil(products.length / itemsPerPage)}
