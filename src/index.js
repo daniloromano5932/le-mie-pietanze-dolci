@@ -13,16 +13,8 @@ import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-  <Navbar/>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path='/categories/:category' element={<Category />} />
-      <Route path='/error' element={<Error />} />
-      <Route path="/search" element={<Search />} />
-      <Route path="/categories" element={<Categories />} />
-    </Routes>
-    <Footer />
-  </BrowserRouter>
+<React.StrictMode>
+  <App/>
+</React.StrictMode>
 );
-
+  
