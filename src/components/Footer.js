@@ -1,38 +1,32 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { email, instagram, tiktok } from "../svg";
+import Stack from 'react-bootstrap/Stack';
 
+import { email, instagram, tiktok } from "../svg";
 
 
 function Footer() {
   const today = new Date();
 
   return (
-    <Container fluid>
-      <Row >
-        <Col >
-          <div className={"socialMedia"}></div>
+    <Container fluid className='footer fixed-bottom'>
       <Row>
-        <Col>
-          <a className={"socialMedia"} href={instagram.href} target="_blank" rel="noreferrer"
-            title="Instagram filyguarrera">{instagram.svg}</a>
-          <a className={"socialMedia"} href={email.href}>{email.svg}<i className={"bi bi-envelope-fill"}></i>
-          </a>
-          <a className={"socialMedia"} href={tiktok.href} target="_blank" rel="noreferrer">
+        <Col>Dove puoi trovarmi</Col>
+      </Row>
+      <Row xs="auto" className='justify-content-center'>
+        <Stack direction="horizontal" gap={5} className={"socialMedia"}>
+          <Col ><a href={instagram.href} target="_blank" rel="noreferrer"
+            title="Instagram filyguarrera">{instagram.svg}</a></Col>
+          <Col><a href={email.href}>{email.svg}<i className={"bi bi-envelope-fill"}></i></a></Col>
+          <Col><a href={tiktok.href} target="_blank" rel="noreferrer">
             {tiktok.svg}<i className={"bi bi-tiktok"}></i>
-          </a>
-        </Col>
+          </a></Col>
+        </Stack>
       </Row>
       <Row>
-        <Col >
-          <p className={"copyright"}>© Copyright {today.getFullYear()}</p>
-        </Col>
-        </Row>
-        </Col>
-
+        <Col>© Copyright {today.getFullYear()}</Col>
       </Row>
-
     </Container>
   );
 }
