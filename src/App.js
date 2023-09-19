@@ -9,6 +9,7 @@ import Error from './pages/Error';
 import Search from './pages/Search';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Footer3 from "./components/Footer3"
 
 function App() {
   // const totalCakes = HomePageCategories.reduce((accumulator, object) => {
@@ -25,7 +26,7 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/categories" element={<Categories />} />
       </Routes>
-      <Footer/>
+      <Footer3/>
     </BrowserRouter>
   );
 }

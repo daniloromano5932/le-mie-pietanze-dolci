@@ -9,8 +9,8 @@ function NavigationBar() {
       <Container fluid>
         <Navbar.Brand href="/">DolcidiFily</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className=' justify-content-end'>
+          <Nav className="nav-items">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/categories">Dolci</Nav.Link>
             <Nav.Link href="#footer">Contattami</Nav.Link>
