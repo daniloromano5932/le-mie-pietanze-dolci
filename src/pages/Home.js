@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
-import { Container, Row, Col } from "react-bootstrap";
-import Navbar2 from '../components/Navbar';
-import { chat_heart, house_heart } from '../svg';
+
 
 function Home() {
   // const totalCakes = HomePageCategories.reduce((accumulator, object) => {

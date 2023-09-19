@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import { Container, Row, Col, Nav } from "react-bootstrap";
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Category from './pages/Category';
