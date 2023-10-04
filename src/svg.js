@@ -11,14 +11,6 @@ export const instagram = {
   href: "https://www.instagram.com/filyguarrera/"
 }
 
-export const email = {
-  svg: <svg xmlns="http://www.w3.org/2000/svg"
-    width="25" height="25" fill="currentColor" className="bi bi-envelope-fill navbar-brand" viewBox="0 0 16 16">
-    <path
-      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-  </svg>,
-  href: "mailto:filippinaguarrera@gmail.com"
-}
 export const tiktok = {
   svg: <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className={"bi bi-tiktok navbar-brand"}
     viewBox="0 0 16 16">
@@ -27,6 +19,7 @@ export const tiktok = {
   </svg>,
   href: "https://www.tiktok.com/@perlinainaina"
 }
+
 export const house_heart = <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" className="bi bi-house-heart" viewBox="0 0 16 16">
   <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z" />
   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />

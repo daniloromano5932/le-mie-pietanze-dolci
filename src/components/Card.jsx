@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 
-function CardApri(props) {
+function CakeCard(props) {
   return (
     <Card className="d-flex" onClick={() => props.handleClick(props.data)}>
       <Link to={props.data.href} className="card-link">
@@ -19,4 +19,4 @@ function CardApri(props) {
   )
 }
 
-export default CardApri;
+export default CakeCard;
