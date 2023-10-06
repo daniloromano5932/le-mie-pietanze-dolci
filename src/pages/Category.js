@@ -73,12 +73,12 @@ function Category() {
           handleClose={handleClose}
         />
       )}
-        <Pages
+      <Pages
         className="pagination"
-            handlePageChange={handlePageChange}
-            activePage={activePage}
-            lastPage={Math.ceil(products.length / itemsPerPage)}
-          />
+        handlePageChange={handlePageChange}
+        activePage={activePage}
+        lastPage={Math.ceil(products.length / itemsPerPage)}
+      />
     </div>
   )
 }

@@ -5,8 +5,8 @@ function CardApri(props) {
   return (
     <Card className="d-flex" onClick={() => props.handleClick(props.data)}>
       <Link to={props.data.href} className="card-link">
-        <Card.Title>{props.data.name}</Card.Title>
         <Card.Body>
+          <Card.Title>{props.data.name}</Card.Title>
           <Card.Img
             className="card-img"
             variant="bottom"

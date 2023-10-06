@@ -1,5 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
+import { house_heart, chat_heart,  } from '../svg';
+import { Col, Row, Container } from 'react-bootstrap';
+import { data } from "../data";
+
 
 
 function Home() {
@@ -8,34 +12,40 @@ function Home() {
   // }, 0);
 
   return (
-    <h1 className='test'>Home</h1>
-      // <Container fluid>
-      // <Navbar2/>
-      //   <Row className='row1'>
-      //     <Col className='feature'>
-      //       <div className="text-center">
-      //         <i className="bi bi-house-heart">{house_heart}</i><br />
-      //         <h4 className="features-title">Fatto in casa</h4>
-      //         <h5 className="features-txt">Ingredienti freschi e genuini</h5>
-      //       </div>
-      //     </Col>
-      //     <Col className='feature'>
-      //       <img src='/images/Crostate/20220205_105049.jpg' className='home-page-img' alt='immagine crostata alla frutta'></img>
-      //     </Col>
-      //   </Row>
-      //   <Row className='row2'>
-      //     <Col className='feature'>
-      //       <img src='/images/Torte/WhatsApp Image 2022-12-27 at 9.53.05 PM.jpeg' className='home-page-img' alt='immagine torta personalizzata'></img>
-      //     </Col>
-      //     <Col className='feature'>
-      //       <div className=" text-center ">
-      //         <i className="bi bi-chat-heart">{chat_heart}</i>
-      //         <h4 className="features-title">Basta chiedere</h4>
-      //         <h5 className="features-txt">Vorresti una combinazione di una o più pietanze? <br /> Chiedi pure!</h5>
-      //       </div>
-      //     </Col>
-      //   </Row>
-      // </Container>
+      <Container fluid className='home-container'>
+        <Row className='home-row p-2' lg={4} md={2} sm={1} xs={1} >
+          <Col className='home-col align-me justify-content-center'>
+            <div className='home-text'>
+              <i className="bi bi-house-heart">{house_heart}</i><br />
+              <h5>Fatto in casa</h5>
+              <h6>Ingredienti freschi e genuini</h6>
+            </div>
+          </Col>
+          <Col className='home-col justify-content-center'>
+            <img 
+            className='home-img' 
+            src={"/" + data.Crostate[Math.floor(Math.random() * data.Crostate.length)].image} 
+            alt='immagine crostata alla frutta'></img>
+          </Col>
+        </Row>
+
+        <Row className='home-row p-2' lg={4} md={2} sm={1} xs={1} >
+          <Col className='home-col'>
+            <img 
+            className='home-img' 
+            src={"/" + data.Torte[Math.floor(Math.random() * data.Torte.length)].image} 
+            alt='immagine crostata alla frutta'>
+            </img>
+          </Col>
+          <Col className='home-col'>
+            <div className='home-text'>
+              <i className="bi bi-chat-heart">{chat_heart}</i>
+              <h5>Basta chiedere</h5>
+              <h6>Vorresti una combinazione di una o più pietanze? <br /> Chiedi pure!</h6>
+            </div>
+          </Col>
+        </Row>
+      </Container>
   );
 }
 

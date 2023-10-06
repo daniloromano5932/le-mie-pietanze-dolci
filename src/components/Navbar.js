@@ -13,8 +13,8 @@ function NavigationBar() {
           <Nav className="nav-items">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/categories">Dolci</Nav.Link>
-            <Nav.Link href="#footer">Contattami</Nav.Link>
-            <Nav.Link href="/search">{search}</Nav.Link>
+            <Nav.Link href="#footer">Social</Nav.Link>
+            <Nav.Link href="/search" className='search-icon'>{search}</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
