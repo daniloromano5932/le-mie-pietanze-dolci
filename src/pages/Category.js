@@ -7,10 +7,18 @@ import Error from "./Error";
 import { Container, Row, Col } from "react-bootstrap";
 import CakeInfo from "../components/CakeInfo";
 import Pages from "../components/Pagination"
+import contentfulClient from "../contentful"
 
 function Category() {
   const { category } = useParams();
   const products = data[category];
+
+  contentfulClient.getEntries({
+    'fields.type': category,
+    content_type: 'rotoli'
+  })
+  .then((contentType) => console.log(contentType))
+  .catch(console.error)
 
   const [activePage, setActivePage] = useState(1)
 
@@ -34,9 +42,6 @@ function Category() {
     setCardClicked(cardData)
   }
 
-  console.log(activePage)
-
-
   return (
     <div className="torte-component align-items-center justify-content-center ">
       <div className=" d-flex row colored-section align-items-center justify-content-center">
@@ -45,7 +50,6 @@ function Category() {
             title={category}
             img={products}
           />
-          <h5 className='total-cakes'>Per un totale di {products.length}</h5>
         </div>
       </div>
       <div className="test align-items-center justify-content-center">
@@ -66,10 +70,9 @@ function Category() {
         <CakeInfo
           show={Boolean(cardClicked)}
           name={cardClicked.name}
-          image={cardClicked.image}
           alt={cardClicked.alt}
           description={cardClicked.description}
-          extra={cardClicked.extra}
+          extra={[cardClicked.image, ...cardClicked.extra]}
           handleClose={handleClose}
         />
       )}

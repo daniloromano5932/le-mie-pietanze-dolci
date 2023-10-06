@@ -10,6 +10,7 @@ function Categories() {
           <Col key={category.id}>
             <Card
               data={category}
+              handleClick={() => {}}
             />
           </Col>
         ))}

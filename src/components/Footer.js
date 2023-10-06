@@ -1,8 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import { instagram, tiktok } from "../svg";
+import instagram from "../assets/svg/instagram.svg"
+import tiktok from "../assets/svg/tiktok.svg"
+import { INSTAGRAM_URL, TIKTOK_URL } from '../constants';
 
 function Footer() {
   const today = new Date();
@@ -15,22 +16,23 @@ function Footer() {
       <Row xs="auto" className='justify-content-center'>
         <Col className='justify-content-center'>
           <a
-            href={instagram.href}
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noreferrer"
             title="Instagram filyguarrera"
             className='social-link'
           >
-            {instagram.svg}
+            <img src={instagram}/>
           </a>
           <a 
-            href={tiktok.href} 
+            href={TIKTOK_URL} 
             target="_blank" 
             rel="noreferrer"
             className='social-link'
           >
-            {tiktok.svg}
-          </a></Col>
+            <img src={tiktok}/>
+          </a>
+        </Col>
       </Row>
       <Row>
         <Col className='copyright'>© Copyright {today.getFullYear()}</Col>

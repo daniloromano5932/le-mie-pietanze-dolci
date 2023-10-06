@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Card from '../components/Card';
 import Pages from '../components/Pagination';
+import CakeInfo from '../components/CakeInfo';
 
 function Search() {
   const [activePage, setActivePage] = useState(1)
@@ -11,6 +12,13 @@ function Search() {
   function handlePageChange(newPageNumber) {
     setActivePage(newPageNumber)
   }
+
+  function handleCardClick(cardData) {
+    setCardClicked(cardData)
+  }
+
+  const [cardClicked, setCardClicked] = useState(null);
+  const handleClose = () => setCardClicked(null);
 
   const items = Object.values(data).flat();
   const [searchResults, setSearchResults] = useState(items);
@@ -50,10 +58,21 @@ function Search() {
               >
                 <Card
                   data={result}
+                  handleClick={handleCardClick}
                 />
               </Col>
             ))}
           </Row>
+          {cardClicked && (
+        <CakeInfo
+          show={Boolean(cardClicked)}
+          name={cardClicked.name}
+          alt={cardClicked.alt}
+          description={cardClicked.description}
+          extra={[cardClicked.image, ...cardClicked.extra]}
+          handleClose={handleClose}
+        />
+      )}
           <Pages
             handlePageChange={handlePageChange}
             activePage={activePage}

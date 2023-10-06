@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 
-function CardApri(props) {
+function CakeCard({ data, handleClick }) {
+  const { href, name, image, alt } = data;
   return (
-    <Card className="d-flex" onClick={() => props.handleClick(props.data)}>
-      <Link to={props.data.href} className="card-link">
+    <Card
+      className="d-flex"
+      onClick={() => handleClick(data)}
+    >
+      <Link
+        to={href}
+        className="card-link"
+      >
         <Card.Body>
-          <Card.Title>{props.data.name}</Card.Title>
+          <Card.Title>{name}</Card.Title>
           <Card.Img
             className="card-img"
             variant="bottom"
-            src={"../" + props.data.image}
-            alt={props.data.alt}
+            src={image.includes("http") ? image : "../" + image}
+            alt={alt}
           />
         </Card.Body>
       </Link>
@@ -19,4 +26,4 @@ function CardApri(props) {
   )
 }
 
-export default CardApri;
+export default CakeCard;
