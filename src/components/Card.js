@@ -17,7 +17,7 @@ function CakeCard({ data, handleClick }) {
           <Card.Img
             className="card-img"
             variant="bottom"
-            src={image.includes("http") ? image : "../" + image}
+            src={"../" + image}
             alt={alt}
           />
         </Card.Body>

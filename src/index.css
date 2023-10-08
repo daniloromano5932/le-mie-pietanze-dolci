@@ -5,10 +5,6 @@
   --body-bg-color: #fff5f4;
 }
 
-
-
-
-
 /*ELEMENTS */
 
 body {
@@ -16,19 +12,11 @@ body {
   background-color: var(--body-bg-color);
 }
 
-a {
-}
-
-a:hover {
-}
-
 .main {
   min-height: calc(100vh - 70px - 118px);
   /* max-width: 1080px; */
   margin: 0 auto;
 }
-
-
 
 h1,
 h2,
@@ -207,7 +195,6 @@ img {
   color: var(--main-title-color);
 }
 
-
 /*HOMEPAGE*/
 
 .home-container {
@@ -237,6 +224,10 @@ img {
   }
 }
 
+.home-icon {
+  height: 50px;
+  width: 50px;
+}
 
 .error-message {
   margin-top: 10%;

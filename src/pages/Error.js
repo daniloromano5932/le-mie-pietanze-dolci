@@ -7,7 +7,9 @@ function ErrorPage() {
         <div className="container-fluid">
         </div>
       </div>
-      <h1 className="error-message">Oh no! La pagina non è stata trovata!</h1>
+      <h1 className="error-message">
+        Oh no! La pagina non è stata trovata!
+      </h1>
     </div>
   )
 }

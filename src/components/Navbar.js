@@ -21,9 +21,13 @@ function NavigationBar() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/categories">Dolci</Nav.Link>
             <Nav.Link href="#footer">Social</Nav.Link>
-            <Nav.Link href="/search" className='search-icon'>
-              <img 
+            <Nav.Link
+              href="/search"
+              className='search-icon'
+            >
+              <img
                 src={search}
+                alt='immagine ricerca'
               />
             </Nav.Link>
           </Nav>

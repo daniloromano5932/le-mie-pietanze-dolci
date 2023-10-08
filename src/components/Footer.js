@@ -9,11 +9,17 @@ function Footer() {
   const today = new Date();
 
   return (
-    <Container fluid className='footer' id='footer'>
+    <Container
+      fluid className='footer'
+      id='footer'
+    >
       <Row className='media'>
         <Col className='justify-content-center'>Dove puoi trovarmi</Col>
       </Row>
-      <Row xs="auto" className='justify-content-center'>
+      <Row
+        xs="auto"
+        className='justify-content-center'
+      >
         <Col className='justify-content-center'>
           <a
             href={INSTAGRAM_URL}
@@ -22,20 +28,28 @@ function Footer() {
             title="Instagram filyguarrera"
             className='social-link'
           >
-            <img src={instagram}/>
+            <img
+              src={instagram}
+              alt='immagine instagram'
+            />
           </a>
-          <a 
-            href={TIKTOK_URL} 
-            target="_blank" 
+          <a
+            href={TIKTOK_URL}
+            target="_blank"
             rel="noreferrer"
             className='social-link'
           >
-            <img src={tiktok}/>
+            <img
+              src={tiktok}
+              alt='immagine tiktok'
+            />
           </a>
         </Col>
       </Row>
       <Row>
-        <Col className='copyright'>© Copyright {today.getFullYear()}</Col>
+        <Col className='copyright'>
+          © Copyright {today.getFullYear()}
+        </Col>
       </Row>
     </Container>
   );

@@ -50,8 +50,18 @@ function Search() {
           />
         </Form>
         <Container className="colored-section">
-        {searchItemsToShow.length === 0 && <h3 className="no-results">Sembra che non ci siano risultati per la tua ricerca</h3>}
-          <Row lg={4} md={2} sm={1} xs={1} className="categories-cards align-items-center justify-content-center">
+          {searchItemsToShow.length === 0 && (
+            <h3 className="no-results">
+              Sembra che non ci siano risultati per la tua ricerca
+            </h3>
+          )}
+          <Row
+            lg={4}
+            md={2}
+            sm={1}
+            xs={1}
+            className="categories-cards align-items-center justify-content-center"
+          >
             {searchItemsToShow.map((result) => (
               <Col
                 key={result.name}
@@ -64,15 +74,15 @@ function Search() {
             ))}
           </Row>
           {cardClicked && (
-        <CakeInfo
-          show={Boolean(cardClicked)}
-          name={cardClicked.name}
-          alt={cardClicked.alt}
-          description={cardClicked.description}
-          extra={[cardClicked.image, ...cardClicked.extra]}
-          handleClose={handleClose}
-        />
-      )}
+            <CakeInfo
+              show={Boolean(cardClicked)}
+              name={cardClicked.name}
+              alt={cardClicked.alt}
+              description={cardClicked.description}
+              extra={[cardClicked.image, ...cardClicked.extra]}
+              handleClose={handleClose}
+            />
+          )}
           <Pages
             handlePageChange={handlePageChange}
             activePage={activePage}
@@ -80,7 +90,6 @@ function Search() {
           />
         </Container>
       </div>
-     
     </div>
   );
 }

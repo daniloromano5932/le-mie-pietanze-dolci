@@ -17,8 +17,8 @@ function Category() {
     'fields.type': category,
     content_type: 'rotoli'
   })
-  .then((contentType) => console.log(contentType))
-  .catch(console.error)
+    .then((contentType) => console.log(contentType))
+    .catch(console.error)
 
   const [activePage, setActivePage] = useState(1)
 
@@ -30,7 +30,6 @@ function Category() {
   const endIndex = activePage * itemsPerPage;
   const startIndex = endIndex - itemsPerPage;
   const searchItemsToShow = products.slice(startIndex, endIndex)
-
   const [cardClicked, setCardClicked] = useState(null);
   const handleClose = () => setCardClicked(null);
 
@@ -54,7 +53,13 @@ function Category() {
       </div>
       <div className="test align-items-center justify-content-center">
         <Container className="colored-section align-items-center justify-content-center">
-          <Row lg={4} md={2} sm={1} xs={1} className="categories-cards align-items-center justify-content-center">
+          <Row
+            lg={4}
+            md={2}
+            sm={1}
+            xs={1}
+            className="categories-cards align-items-center justify-content-center"
+            >
             {searchItemsToShow.map((item) => (
               <Col key={item.id}>
                 <Card
