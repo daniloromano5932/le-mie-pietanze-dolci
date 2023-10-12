@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Title from "../components/Title";
 import Card from "../components/Card";
+import {data} from "../data"
 import { useParams } from 'react-router-dom';
-import { data } from "../data";
 import Error from "./Error";
 import { Container, Row, Col } from "react-bootstrap";
 import CakeInfo from "../components/CakeInfo";
@@ -11,35 +11,48 @@ import contentfulClient from "../contentful"
 
 function Category() {
   const { category } = useParams();
-  const products = data[category];
-
-  contentfulClient.getEntries({
-    'fields.type': category,
-    content_type: 'rotoli'
-  })
-    .then((contentType) => console.log(contentType))
-    .catch(console.error)
-
+  const [cakeData, setCakeData] = useState(null)
   const [activePage, setActivePage] = useState(1)
+  const [cardClicked, setCardClicked] = useState(null);
+
+
+  const products = data[category]
+
+  useEffect(() => {
+    contentfulClient.getEntries({
+      content_type: 'cake',
+      "fields.title": category
+    })
+      .then((res) => setCakeData(res))
+      .catch(console.error)
+  }, [])
+
+  if (!cakeData) {
+    return <Error />
+  }
+  
+
 
   function handlePageChange(newPageNumber) {
     setActivePage(newPageNumber)
   }
 
+  
+
   const itemsPerPage = 10;
   const endIndex = activePage * itemsPerPage;
   const startIndex = endIndex - itemsPerPage;
-  const searchItemsToShow = products.slice(startIndex, endIndex)
-  const [cardClicked, setCardClicked] = useState(null);
+  const searchItemsToShow = cakeData.items.slice(startIndex, endIndex)
   const handleClose = () => setCardClicked(null);
 
-  if (!products) {
-    return <Error />
-  }
+
+
 
   function handleCardClick(cardData) {
     setCardClicked(cardData)
   }
+
+  console.log("products", cakeData)
 
   return (
     <div className="torte-component align-items-center justify-content-center ">
@@ -47,7 +60,7 @@ function Category() {
         <div className="align-items-center justify-content-center title-section">
           <Title
             title={category}
-            img={products}
+            img={cakeData}
           />
         </div>
       </div>
@@ -61,8 +74,8 @@ function Category() {
             className="categories-cards align-items-center justify-content-center"
             >
             {searchItemsToShow.map((item) => (
-              <Col key={item.id}>
-                <Card
+              <Col key={item.sys.id}>
+                <Card 
                   data={item}
                   handleClick={handleCardClick}
                 />
@@ -74,18 +87,19 @@ function Category() {
       {cardClicked && (
         <CakeInfo
           show={Boolean(cardClicked)}
-          name={cardClicked.name}
-          alt={cardClicked.alt}
-          description={cardClicked.description}
-          extra={[cardClicked.image, ...cardClicked.extra]}
+          name={cardClicked.fields.name}
+          // alt={cardClicked.alt}
+          // description={cardClicked.description}
+          extras={cardClicked.fields.extras}
           handleClose={handleClose}
+          img={cardClicked.fields.image.fields.file.url}
         />
       )}
       <Pages
         className="pagination"
         handlePageChange={handlePageChange}
         activePage={activePage}
-        lastPage={Math.ceil(products.length / itemsPerPage)}
+        lastPage={Math.ceil(cakeData.items.length / itemsPerPage)}
       />
     </div>
   )

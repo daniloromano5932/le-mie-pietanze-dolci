@@ -5,7 +5,7 @@ import { Carousel } from 'react-bootstrap';
 import 'react-responsive-modal/styles.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function CakeInfo({ show, handleClose, name, extra, description }) {
+function CakeInfo({ show, handleClose, name, extras, img }) {
   return (
     <Modal
       show={show}
@@ -26,19 +26,25 @@ function CakeInfo({ show, handleClose, name, extra, description }) {
           variant="dark"
           touch="yes"
         >
-          {extra.map((item) => {
+          {extras ? extras.map((item) => {
             return (
-              <Carousel.Item key={item}>
+              <Carousel.Item key={item.sys.id}>
                 <img
                   className={"big-pic"}
-                  src={item.includes("http") ? item : "../" + item}
-                  alt="Immagine secondaria del dolce"
+                  src={item.fields.file.url}
+                  // alt="Immagine secondaria del dolce"
                 />
               </Carousel.Item>
             )
-          })}
+          }) : <Carousel.Item>
+            <img
+              className={"big-pic"}
+              src={img}
+              // alt="Immagine secondaria del dolce"
+            />
+          </Carousel.Item>}
         </Carousel>
-        <p className='pop-text'>{description}</p>
+        {/* <p className='pop-text'>{description}</p> */}
       </Modal.Body>
       <Modal.Footer>
         <Button
