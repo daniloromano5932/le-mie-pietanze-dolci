@@ -1,10 +1,11 @@
 import Form from 'react-bootstrap/Form';
-import { data } from "../data"
-import { useState } from 'react';
+// import { data } from "../data"
+import { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import Card from '../components/Card';
+import CardItem from '../components/CardItem';
 import Pages from '../components/Pagination';
 import CakeInfo from '../components/CakeInfo';
+import contentfulClient from "../contentful"
 
 function Search() {
   const [activePage, setActivePage] = useState(1)
@@ -19,6 +20,16 @@ function Search() {
 
   const [cardClicked, setCardClicked] = useState(null);
   const handleClose = () => setCardClicked(null);
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    contentfulClient.getEntries({
+      content_type: 'cake',
+      limit: 1000
+    })
+      .then((res) => setData(res.items))
+      .catch(console.error)
+  }, [])
 
   const items = Object.values(data).flat();
   const [searchResults, setSearchResults] = useState(items);
@@ -28,28 +39,31 @@ function Search() {
   const searchItemsToShow = searchResults.slice(startIndex, endIndex)
 
   function handleChange(e) {
-    const searchWord = e.target.value
+    const searchWord = e.target.value.toLowerCase()
+    console.log("searchword", searchWord)
     if (searchWord) {
-      setSearchResults(items.filter((item) => JSON.stringify(item).includes(searchWord)));
+      setSearchResults(items.filter((item) => JSON.stringify(item).toLocaleLowerCase().includes(searchWord)));
+      console.log("searchresults", searchResults)
     } else {
       setSearchResults(items)
     }
   }
 
   return (
-    <div className='d-flex align-items-center justify-content-center'>
-      <div className='search'>
-        <h1>Cerca il tuo dolce</h1>
-        <Form className="">
+    <div className='search align-items-center justify-content-center container'>
+      <h1>Cerca il tuo dolce</h1>
+      <div className=''>
+        <Form className="searchForm">
           <Form.Control
             type="search"
             placeholder="Cerca..."
-            className="me-4"
             aria-label="Search"
             onChange={handleChange}
           />
         </Form>
-        <Container className="colored-section">
+      </div>
+      <div className="">
+        <Container className="">
           {searchItemsToShow.length === 0 && (
             <h3 className="no-results">
               Sembra che non ci siano risultati per la tua ricerca
@@ -63,12 +77,12 @@ function Search() {
             className="categories-cards align-items-center justify-content-center"
           >
             {searchItemsToShow.map((result) => (
-              <Col
-                key={result.name}
+              <Col key={result.name}
               >
-                <Card
+                <CardItem
                   data={result}
                   handleClick={handleCardClick}
+                  key={result.name}
                 />
               </Col>
             ))}
@@ -76,18 +90,18 @@ function Search() {
           {cardClicked && (
             <CakeInfo
               show={Boolean(cardClicked)}
-              name={cardClicked.name}
-              alt={cardClicked.alt}
-              description={cardClicked.description}
-              extra={[cardClicked.image, ...cardClicked.extra]}
+              name={cardClicked.fields.name}
+              // alt={cardClicked.alt}
+              // description={cardClicked.description}
+              extras={cardClicked.fields.extras}
               handleClose={handleClose}
             />
           )}
-          <Pages
+          {searchItemsToShow.length > 1 && <Pages
             handlePageChange={handlePageChange}
             activePage={activePage}
             lastPage={Math.ceil(items.length / itemsPerPage)}
-          />
+          />}
         </Container>
       </div>
     </div>

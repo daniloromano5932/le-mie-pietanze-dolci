@@ -10,10 +10,7 @@ import Navbar from './components/Navbar';
 import Footer from "./components/Footer"
 
 function App() {
-  // const totalCakes = HomePageCategories.reduce((accumulator, object) => {
-  //   return accumulator + object.total;
-  // }, 0);
-
+  
   return (
     <BrowserRouter>
       <Navbar />

@@ -1,22 +1,52 @@
-import HomePageCategories from "../data/HomePageCategories"
 import { Container, Row, Col } from "react-bootstrap";
-import Card from "../components/Card";
+import { useEffect, useState } from "react";
+import contentfulClient from "../contentful"
+import CardItem from "../components/CardItem";
+import Loading from "./Loading";
 
 function Categories() {
+
+  const [categories, setCategories] = useState(null);
+
+  useEffect(() => {
+    contentfulClient.getEntries({
+      content_type: 'cake',
+      limit: 1000
+    })
+      .then((res) => setCategories(res.items))
+      .catch(console.error)
+  }, [])
+
+  if (!categories) {
+    return <Loading />
+  }
+
+  const types = categories.reduce((obj, item) => {
+    if (!obj[item.fields.type]) {
+      obj[item.fields.type] = [item]
+    } else {
+      obj[item.fields.type].push(item);
+    }
+    return obj
+  }, {})
+
+  const typesItems = Object.keys(types);
+
   return (
     <Container className="colored-section">
       <Row
-      lg={4}
-      md={2}
-      sm={1}
-      xs={1}
-      className="categories-cards align-items-center justify-content-center"
+        lg={4}
+        md={2}
+        sm={1}
+        xs={1}
+        className="categories-cards align-items-center justify-content-center"
       >
-        {HomePageCategories.map((category) => (
-          <Col key={category.id}>
-            <Card
-              data={category}
-              handleClick={() => {}}
+        {typesItems.map((item) => (
+          <Col key={item}>
+            <CardItem
+              handleClick={() => { }}
+              typesItem={item}
+              types={types}
             />
           </Col>
         ))}

@@ -2,6 +2,7 @@ import React from "react";
 
 function Title({ title, img }) {
   const titleImg = img.items[Math.floor(Math.random() * img.items.length)].fields.image.fields.file.url;
+
   return <div className="title row align-items-center justify-content-center">
     <div className="col-4 category-title">
       <h3 className="title">{title}</h3>
@@ -11,7 +12,7 @@ function Title({ title, img }) {
     <img
       className="col-4 title-img"
       src={titleImg}
-        alt={img.alt}></img>
+      alt={img.alt}></img>
   </div>
 }
 

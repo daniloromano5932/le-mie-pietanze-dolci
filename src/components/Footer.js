@@ -6,6 +6,7 @@ import tiktok from "../assets/svg/tiktok.svg"
 import { INSTAGRAM_URL, TIKTOK_URL } from '../constants';
 
 function Footer() {
+
   const today = new Date();
 
   return (

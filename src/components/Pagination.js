@@ -1,9 +1,11 @@
 import Pagination from 'react-bootstrap/Pagination';
 
 function Pages({ activePage, handlePageChange, lastPage }) {
+
   if (lastPage === 1) {
     return
   }
+  
   return (
     <Pagination
       size='lg'

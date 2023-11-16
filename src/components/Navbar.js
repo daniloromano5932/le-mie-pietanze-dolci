@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import search from "../assets/svg/search.svg"
 
 function NavigationBar() {
+  
   return (
     <Navbar
       sticky='top'

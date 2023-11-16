@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Title from "../components/Title";
-import Card from "../components/Card";
-import {data} from "../data"
+import CardItem from "../components/CardItem";
 import { useParams } from 'react-router-dom';
-import Error from "./Error";
 import { Container, Row, Col } from "react-bootstrap";
 import CakeInfo from "../components/CakeInfo";
 import Pages from "../components/Pagination"
 import contentfulClient from "../contentful"
+import Loading from "./Loading";
 
 function Category() {
   const { category } = useParams();
@@ -15,29 +14,23 @@ function Category() {
   const [activePage, setActivePage] = useState(1)
   const [cardClicked, setCardClicked] = useState(null);
 
-
-  const products = data[category]
-
   useEffect(() => {
     contentfulClient.getEntries({
       content_type: 'cake',
-      "fields.title": category
+      "fields.type": category,
+      limit: 1000
     })
       .then((res) => setCakeData(res))
       .catch(console.error)
   }, [])
 
   if (!cakeData) {
-    return <Error />
+    return <Loading />
   }
-  
-
 
   function handlePageChange(newPageNumber) {
     setActivePage(newPageNumber)
   }
-
-  
 
   const itemsPerPage = 10;
   const endIndex = activePage * itemsPerPage;
@@ -45,14 +38,9 @@ function Category() {
   const searchItemsToShow = cakeData.items.slice(startIndex, endIndex)
   const handleClose = () => setCardClicked(null);
 
-
-
-
   function handleCardClick(cardData) {
     setCardClicked(cardData)
   }
-
-  console.log("products", cakeData)
 
   return (
     <div className="torte-component align-items-center justify-content-center ">
@@ -72,10 +60,10 @@ function Category() {
             sm={1}
             xs={1}
             className="categories-cards align-items-center justify-content-center"
-            >
+          >
             {searchItemsToShow.map((item) => (
               <Col key={item.sys.id}>
-                <Card 
+                <CardItem
                   data={item}
                   handleClick={handleCardClick}
                 />

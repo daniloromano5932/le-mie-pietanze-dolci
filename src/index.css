@@ -95,11 +95,11 @@ h6 {
   margin-right: 20px;
   margin-left: 50px !important;
   transition: transform .2s;
-} 
+}
 
 .navbar a {
   margin: 15px;
-  font-size:larger
+  font-size: larger
 }
 
 .navbar-brand:hover {
@@ -177,6 +177,15 @@ img {
   object-fit: cover;
 }
 
+/*LOADING*/
+
+.loading {
+  margin-left: auto !important;
+  margin-right: auto;
+  color: #B0578D;
+}
+
+
 /*CAKEINFO*/
 
 .pop-text {
@@ -192,7 +201,15 @@ img {
 .search h1 {
   margin: 20px 0;
   font-size: 24px;
+  width: 100%;
   color: var(--main-title-color);
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.searchbar {
+  width: 300px;
+
 }
 
 /*HOMEPAGE*/
@@ -235,8 +252,6 @@ img {
 
 /*Pagination*/
 
-.page-link {
-}
+.page-link {}
 
-.active>.page-link {
-}
+.active>.page-link {}

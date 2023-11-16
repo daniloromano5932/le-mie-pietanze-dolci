@@ -3,9 +3,26 @@ import '../index.css';
 import houseHeart from '../assets/svg/houseHeart.svg';
 import chatHeart from "../assets/svg/chatHeart.svg";
 import { Col, Row, Container } from 'react-bootstrap';
-import { data } from "../data";
+import { useState, useEffect } from 'react';
+import contentfulClient from "../contentful"
+import Loading from './Loading';
 
 function Home() {
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    contentfulClient.getEntries({
+      content_type: 'cake',
+      limit: 1000
+    })
+      .then((res) => setData(res))
+      .catch(console.error)
+  }, [])
+
+  if (!data) {
+    return <Loading />
+  }
 
   return (
     <Container fluid className='home-container'>
@@ -32,7 +49,7 @@ function Home() {
         <Col className='home-col justify-content-center'>
           <img
             className='home-img'
-            src={"/" + data.Crostate[Math.floor(Math.random() * data.Crostate.length)].image}
+            src={"/" + data.items[Math.floor(Math.random() * data.items.length)].fields.image.fields.file.url}
             alt='immagine crostata alla frutta'
           />
         </Col>
@@ -47,7 +64,7 @@ function Home() {
         <Col className='home-col'>
           <img
             className='home-img'
-            src={"/" + data.Torte[Math.floor(Math.random() * data.Torte.length)].image}
+            src={"/" + data.items[Math.floor(Math.random() * data.items.length)].fields.image.fields.file.url}
             alt='immagine crostata alla frutta'
           >
           </img>
