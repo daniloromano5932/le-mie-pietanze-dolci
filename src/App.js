@@ -1,7 +1,7 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Home from './pages/Home';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Category from './pages/Category';
 import Categories from './pages/Categories';
 import Error from './pages/Error';

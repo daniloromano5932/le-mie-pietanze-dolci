@@ -1,11 +1,10 @@
-import Form from 'react-bootstrap/Form';
-// import { data } from "../data"
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Form from 'react-bootstrap/Form';
+import contentfulClient from "../contentful"
 import CardItem from '../components/CardItem';
 import Pages from '../components/Pagination';
 import CakeInfo from '../components/CakeInfo';
-import contentfulClient from "../contentful"
 
 function Search() {
   const [activePage, setActivePage] = useState(1)
@@ -40,10 +39,8 @@ function Search() {
 
   function handleChange(e) {
     const searchWord = e.target.value.toLowerCase()
-    console.log("searchword", searchWord)
     if (searchWord) {
       setSearchResults(items.filter((item) => JSON.stringify(item).toLocaleLowerCase().includes(searchWord)));
-      console.log("searchresults", searchResults)
     } else {
       setSearchResults(items)
     }
@@ -53,7 +50,7 @@ function Search() {
     <div className='search align-items-center justify-content-center container'>
       <h1>Cerca il tuo dolce</h1>
       <div className=''>
-        <Form className="searchForm">
+        <Form>
           <Form.Control
             type="search"
             placeholder="Cerca..."
@@ -62,8 +59,8 @@ function Search() {
           />
         </Form>
       </div>
-      <div className="">
-        <Container className="">
+      <div>
+        <Container>
           {searchItemsToShow.length === 0 && (
             <h3 className="no-results">
               Sembra che non ci siano risultati per la tua ricerca

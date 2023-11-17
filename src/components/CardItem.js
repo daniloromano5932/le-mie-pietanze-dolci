@@ -26,12 +26,10 @@ function CardItem({ data, handleClick, types, typesItem }) {
       >
         <Card.Body>
           <Card.Img
-            className="card-img"
             variant="bottom"
             src={typesItem === undefined ? "http:" + data.fields.image.fields.file.url : details()}
           />
           <Card.Title>{typesItem === undefined ? data.fields.name : typesItem}</Card.Title>
-
         </Card.Body>
       </Link>
     </Card>
