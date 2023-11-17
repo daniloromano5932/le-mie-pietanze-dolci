@@ -24,11 +24,12 @@ function NavigationBar() {
             <Nav.Link href="#footer">Social</Nav.Link>
             <Nav.Link
               href="/search"
-              className='search-icon'
+              className=''
             >
               <img
                 src={search}
                 alt='immagine ricerca'
+                className='search-icon'
               />
             </Nav.Link>
           </Nav>

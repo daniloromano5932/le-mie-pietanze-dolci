@@ -48,7 +48,6 @@ function Category() {
         <div className="align-items-center justify-content-center title-section">
           <Title
             title={category}
-            img={cakeData}
           />
         </div>
       </div>
