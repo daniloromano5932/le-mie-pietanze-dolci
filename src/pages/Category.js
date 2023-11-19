@@ -22,7 +22,7 @@ function Category() {
     })
       .then((res) => setCakeData(res))
       .catch(console.error)
-  }, [])
+  }, [category])
 
   if (!cakeData) {
     return <Loading />

@@ -28,7 +28,7 @@ function NavigationBar() {
             >
               <img
                 src={search}
-                // alt='immagine ricerca'
+                alt=''
                 className='search-icon'
               />
             </Nav.Link>

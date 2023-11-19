@@ -58,7 +58,8 @@ function Home() {
         <Col className='home-col justify-content-center'>
           <img
             className='home-img'
-            src={"http:///images.ctfassets.net/hbnu18icn124/220ukPiw7s8UO6Qz4YhoRJ/282d4c61601b36abf4769789af473834/Torta-57-a"}
+            src="http:///images.ctfassets.net/hbnu18icn124/220ukPiw7s8UO6Qz4YhoRJ/282d4c61601b36abf4769789af473834/Torta-57-a"
+            alt=""
           />
         </Col>
       </Row>

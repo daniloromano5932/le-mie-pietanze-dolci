@@ -31,7 +31,7 @@ function Footer() {
           >
             <img
               src={instagram}
-              // alt='immagine instagram'
+              alt=''
             />
           </a>
           <a
@@ -42,7 +42,7 @@ function Footer() {
           >
             <img
               src={tiktok}
-              // alt='immagine tiktok'
+              alt=''
             />
           </a>
         </Col>

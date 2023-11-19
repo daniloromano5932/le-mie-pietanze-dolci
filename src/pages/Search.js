@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import contentfulClient from "../contentful"
@@ -8,6 +8,9 @@ import CakeInfo from '../components/CakeInfo';
 
 function Search() {
   const [activePage, setActivePage] = useState(1)
+  const [cardClicked, setCardClicked] = useState(null);
+  const [searchResults, setSearchResults] = useState([]);
+  const [hasUserSearched, setHasUserSearched] = useState(false)
 
   function handlePageChange(newPageNumber) {
     setActivePage(newPageNumber)
@@ -17,32 +20,24 @@ function Search() {
     setCardClicked(cardData)
   }
 
-  const [cardClicked, setCardClicked] = useState(null);
   const handleClose = () => setCardClicked(null);
-  const [data, setData] = useState({});
 
-  useEffect(() => {
-    contentfulClient.getEntries({
-      content_type: 'cake',
-      limit: 1000
-    })
-      .then((res) => setData(res.items))
-      .catch(console.error)
-  }, [])
-
-  const items = Object.values(data).flat();
-  const [searchResults, setSearchResults] = useState(items);
   const itemsPerPage = 10;
   const endIndex = activePage * itemsPerPage;
   const startIndex = endIndex - itemsPerPage;
   const searchItemsToShow = searchResults.slice(startIndex, endIndex)
 
   function handleChange(e) {
-    const searchWord = e.target.value.toLowerCase()
+    setHasUserSearched(true);
+    const searchWord = e.target.value
     if (searchWord) {
-      setSearchResults(items.filter((item) => JSON.stringify(item).toLocaleLowerCase().includes(searchWord)));
+      contentfulClient.getEntries({
+        'query': searchWord
+      }).then((res) => {
+        setSearchResults(res.items);
+      })      
     } else {
-      setSearchResults(items)
+      setSearchResults([])
     }
   }
 
@@ -61,7 +56,7 @@ function Search() {
       </div>
       <div>
         <Container>
-          {searchItemsToShow.length === 0 && (
+          {hasUserSearched && searchItemsToShow.length === 0 && (
             <h3 className="no-results">
               Sembra che non ci siano risultati per la tua ricerca
             </h3>
@@ -97,7 +92,7 @@ function Search() {
           {searchItemsToShow.length > 1 && <Pages
             handlePageChange={handlePageChange}
             activePage={activePage}
-            lastPage={Math.ceil(items.length / itemsPerPage)}
+            lastPage={Math.ceil(searchResults.length / itemsPerPage)}
           />}
         </Container>
       </div>

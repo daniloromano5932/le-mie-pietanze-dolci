@@ -35,7 +35,7 @@ function CakeInfo({ show, handleClose, name, extras, img }) {
                 <img
                   className={"big-pic"}
                   src={item.fields.file.url}
-                // alt="Immagine secondaria del dolce"
+                alt=""
                 />
               </Carousel.Item>
             )
@@ -43,7 +43,7 @@ function CakeInfo({ show, handleClose, name, extras, img }) {
             <img
               className={"big-pic"}
               src={img}
-            // alt="Immagine secondaria del dolce"
+            alt=""
             />
           </Carousel.Item>}
         </Carousel>
