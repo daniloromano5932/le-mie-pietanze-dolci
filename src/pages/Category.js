@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Title from "../components/Title";
-import CardItem from "../components/CardItem";
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
-import CakeInfo from "../components/CakeInfo";
-import Pages from "../components/Pagination"
 import contentfulClient from "../contentful"
 import Loading from "./Loading";
+import Title from "../components/Title";
+import CardItem from "../components/CardItem";
+import CakeInfo from "../components/CakeInfo";
+import Pages from "../components/Pagination"
 
 function Category() {
   const { category } = useParams();
@@ -22,7 +22,7 @@ function Category() {
     })
       .then((res) => setCakeData(res))
       .catch(console.error)
-  }, [])
+  }, [category])
 
   if (!cakeData) {
     return <Loading />
@@ -43,16 +43,15 @@ function Category() {
   }
 
   return (
-    <div className="torte-component align-items-center justify-content-center ">
-      <div className=" d-flex row colored-section align-items-center justify-content-center">
+    <div className="align-items-center justify-content-center">
+      <div className="d-flex row colored-section align-items-center justify-content-center">
         <div className="align-items-center justify-content-center title-section">
           <Title
             title={category}
-            img={cakeData}
           />
         </div>
       </div>
-      <div className="test align-items-center justify-content-center">
+      <div className="align-items-center justify-content-center">
         <Container className="colored-section align-items-center justify-content-center">
           <Row
             lg={4}
@@ -84,7 +83,6 @@ function Category() {
         />
       )}
       <Pages
-        className="pagination"
         handlePageChange={handlePageChange}
         activePage={activePage}
         lastPage={Math.ceil(cakeData.items.length / itemsPerPage)}

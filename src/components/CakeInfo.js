@@ -6,7 +6,7 @@ import 'react-responsive-modal/styles.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function CakeInfo({ show, handleClose, name, extras, img }) {
-  
+
   return (
     <Modal
       show={show}
@@ -18,7 +18,7 @@ function CakeInfo({ show, handleClose, name, extras, img }) {
         closeButton
         onHide={handleClose}
       >
-        <Modal.Title className='modal-title'>
+        <Modal.Title>
           {name}
         </Modal.Title>
       </Modal.Header>
@@ -35,7 +35,7 @@ function CakeInfo({ show, handleClose, name, extras, img }) {
                 <img
                   className={"big-pic"}
                   src={item.fields.file.url}
-                // alt="Immagine secondaria del dolce"
+                alt=""
                 />
               </Carousel.Item>
             )
@@ -43,7 +43,7 @@ function CakeInfo({ show, handleClose, name, extras, img }) {
             <img
               className={"big-pic"}
               src={img}
-            // alt="Immagine secondaria del dolce"
+            alt=""
             />
           </Carousel.Item>}
         </Carousel>

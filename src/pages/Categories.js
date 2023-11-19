@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import contentfulClient from "../contentful"
-import CardItem from "../components/CardItem";
 import Loading from "./Loading";
+import CardItem from "../components/CardItem";
 
 function Categories() {
 

@@ -1,8 +1,8 @@
 :root {
-  --main-bg-color: #FFE4D6;
-  --main-title-color: #B0578D;
-  --sec-bg-color: #FACBEA;
-  --body-bg-color: #fff5f4;
+  --main-bg-color: #F1EFEF;
+  --main-title-color: #3F2305;
+  --sec-bg-color: #DFD7BF;
+  --body-bg-color: #F5F5F5;
 }
 
 /*ELEMENTS */
@@ -34,8 +34,8 @@ h6 {
 }
 
 .title {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -57,6 +57,7 @@ h6 {
   font-size: x-large;
   color: var(--main-title-color);
   text-align: center;
+  margin-top: 20px;
 }
 
 .categories-cards {
@@ -65,36 +66,50 @@ h6 {
 
 .card-body {
   background-color: var(--body-bg-color);
+  padding: 0px;
+  width: 300px;
+  height: 300px;
 }
 
 .card-link {
   text-decoration: none;
+  padding: 0px;
 }
 
 .card {
   margin-bottom: 50px;
   margin-right: 0px !important;
+  background-color: #fff5f4;
+  border: none;
 }
 
-.card:hover {
-  box-shadow: 0 0 1px 1px #B0578D;
+.card-body:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 /*NAVBAR*/
 
 .navbar {
   top: 0;
-  box-shadow: 3px 3px #B0578D;
+  box-shadow: 3px 3px #3F2305;
   background-color: var(--sec-bg-color) !important;
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-right: 20px;
   margin-left: 50px !important;
   transition: transform .2s;
+}
+
+.navbar-brand {
+  font-size: 24px !important;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.5);
 }
 
 .navbar a {
@@ -103,21 +118,17 @@ h6 {
 }
 
 .navbar-brand:hover {
-  transform: scale(1.5);
-}
-
-.navbar-brand:hover {
-  text-shadow: 2px 2px 9px #F5C6AA;
+  text-shadow: 2px 2px 9px var(--main-bg-color);
 }
 
 .nav-link:hover {
-  text-shadow: 2px 2px 9px #F5C6AA;
+  text-shadow: 2px 2px 9px var(--main-bg-color);
 }
 
 .search-icon {
   display: inline-block;
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
 }
 
 .search-icon img {
@@ -129,7 +140,7 @@ h6 {
 
 .footer {
   text-align: center;
-  border-top: solid 3px #B0578D;
+  border-top: solid 3px #3F2305;
   background-color: var(--sec-bg-color);
 }
 
@@ -185,7 +196,6 @@ img {
   color: #B0578D;
 }
 
-
 /*CAKEINFO*/
 
 .pop-text {
@@ -209,7 +219,6 @@ img {
 
 .searchbar {
   width: 300px;
-
 }
 
 /*HOMEPAGE*/
@@ -246,12 +255,31 @@ img {
   width: 50px;
 }
 
+.home-img {
+  width: 400px;
+  height: 600px;
+}
+
+.home-text-2 {
+  margin-top: 100px;
+}
+
+.home-text {
+  margin-top: 100px;
+}
+
 .error-message {
   margin-top: 10%;
 }
 
 /*Pagination*/
 
-.page-link {}
+.page-link {
+  background-color: var(--sec-bg-color);
+  color: var(--main-title-color);
+}
 
-.active>.page-link {}
+.active>.page-link {
+  background-color: var(--main-bg-color);
+  color: var(--main-title-color);
+}

@@ -1,9 +1,9 @@
+import { INSTAGRAM_URL, TIKTOK_URL } from '../constants';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import instagram from "../assets/svg/instagram.svg"
 import tiktok from "../assets/svg/tiktok.svg"
-import { INSTAGRAM_URL, TIKTOK_URL } from '../constants';
 
 function Footer() {
 
@@ -31,7 +31,7 @@ function Footer() {
           >
             <img
               src={instagram}
-              alt='immagine instagram'
+              alt=''
             />
           </a>
           <a
@@ -42,7 +42,7 @@ function Footer() {
           >
             <img
               src={tiktok}
-              alt='immagine tiktok'
+              alt=''
             />
           </a>
         </Col>

@@ -16,7 +16,7 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className=' justify-content-end'
+          className='justify-content-end'
         >
           <Nav className="nav-items">
             <Nav.Link href="/">Home</Nav.Link>
@@ -24,11 +24,12 @@ function NavigationBar() {
             <Nav.Link href="#footer">Social</Nav.Link>
             <Nav.Link
               href="/search"
-              className='search-icon'
+              className=''
             >
               <img
                 src={search}
-                alt='immagine ricerca'
+                alt=''
+                className='search-icon'
               />
             </Nav.Link>
           </Nav>
