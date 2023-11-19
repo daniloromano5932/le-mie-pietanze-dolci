@@ -74,7 +74,7 @@ function Search() {
             className="categories-cards align-items-center justify-content-center"
           >
             {searchItemsToShow.map((result) => (
-              <Col key={result.name}
+              <Col key={result.fields.name}
               >
                 <CardItem
                   data={result}
